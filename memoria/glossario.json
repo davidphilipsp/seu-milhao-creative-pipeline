@@ -1,0 +1,256 @@
+{
+ "versao": 1,
+ "atualizado": "2026-10-22",
+ "taxonomia_8_campos": {
+  "fonte": "BRIEFING do piloto 20/10/2026 (_arquivo/docs-anteriores/BRIEFING-piloto-N1-01.md) e research/2026-08-11-shortform-direct-sales-br",
+  "campos": [
+   {
+    "id": "angulo",
+    "nome": "Ângulo",
+    "descricao": "a ideia central do criativo (ex.: solidário, aspiracional, convite direto)"
+   },
+   {
+    "id": "tom",
+    "nome": "Tom",
+    "descricao": "registro emocional e de linguagem (caloroso, sóbrio, humor de vizinhança)"
+   },
+   {
+    "id": "hook",
+    "nome": "Hook",
+    "descricao": "o que prende nos 3 primeiros segundos: visual ou verbal"
+   },
+   {
+    "id": "gatilho",
+    "nome": "Gatilho",
+    "descricao": "mecanismo psicológico (pertencimento, curiosidade, reciprocidade, contradição)"
+   },
+   {
+    "id": "elemento",
+    "nome": "Elemento",
+    "descricao": "objeto ou imagem-chave (moeda, mão, Apresentador, foto da Instituição)"
+   },
+   {
+    "id": "persona_alvo",
+    "nome": "Persona-alvo",
+    "descricao": "P1 a P5 (ver personas)"
+   },
+   {
+    "id": "camada_objecao",
+    "nome": "Camada de Objeção",
+    "descricao": "a objeção que o criativo responde ('isso é golpe?', 'não é pra mim')"
+   },
+   {
+    "id": "risco_politica",
+    "nome": "Risco de Política",
+    "descricao": "baixo | médio | alto, com o motivo (Meta, regulamento, imagem)"
+   }
+  ]
+ },
+ "esqueleto_6_movimentos": {
+  "fonte": "BRIEFING do piloto 20/10/2026",
+  "movimentos": [
+   {
+    "n": 1,
+    "nome": "quebra de padrão física",
+    "descricao": "algo físico e inesperado prende o olhar"
+   },
+   {
+    "n": 2,
+    "nome": "ancoragem",
+    "descricao": "o pouco, o concreto, a situação comum"
+   },
+   {
+    "n": 3,
+    "nome": "escada do sonho",
+    "descricao": "do pouco ao prêmio (R$ 100.000, 29/11)"
+   },
+   {
+    "n": 4,
+    "nome": "empilhamento",
+    "descricao": "razões se somam: a causa, a Instituição, a parceria"
+   },
+   {
+    "n": 5,
+    "nome": "escalonamento",
+    "descricao": "mais títulos, mais chances (SUSPENSO no nível 1: nunca 'comprar em volume para ganhar')"
+   },
+   {
+    "n": 6,
+    "nome": "CTA com providência",
+    "descricao": "o que fazer agora: entrar no grupo / comprar o título"
+   }
+  ],
+  "suspensos_nivel_1": [
+   5
+  ]
+ },
+ "personas": {
+  "fonte": "rótulos usados no corpus (BRIEFING, ganchos, roteiro v2 do N1-01); NENHUMA definição escrita existe no repositório",
+  "status": "pendente: pedir ao usuário o documento das personas (memoria/fatos.json → pendencias.personas)",
+  "itens": [
+   {
+    "id": "P1",
+    "definicao": null,
+    "uso_no_corpus": "persona principal do N1-01 'A sorte se propaga' e do TK-03 T1"
+   },
+   {
+    "id": "P2",
+    "definicao": null,
+    "uso_no_corpus": "persona da cadeira vazia / Painho (ganchos H01–H12)"
+   },
+   {
+    "id": "P3",
+    "definicao": null,
+    "uso_no_corpus": "ganchos solidários H4"
+   },
+   {
+    "id": "P4",
+    "definicao": null,
+    "uso_no_corpus": "ganchos solidários H5"
+   },
+   {
+    "id": "P5",
+    "definicao": null,
+    "uso_no_corpus": "persona secundária do N1-01 e do TK-03"
+   }
+  ]
+ },
+ "segmentos": {
+  "fonte": "missão de reestruturação 21/10/2026 (seção G)",
+  "itens": [
+   {
+    "id": "popular",
+    "personas": [
+     "P1",
+     "P2",
+     "P3",
+     "P4",
+     "P5"
+    ],
+    "confianca": "alta",
+    "estilo_padrao": "realismo-celular",
+    "ticket": "faixa de entrada"
+   },
+   {
+    "id": "classe_media",
+    "personas": [],
+    "confianca": "média",
+    "estilo_padrao": "a definir",
+    "ticket": "faixa intermediária",
+    "hipotese": "sonho tangível, praticidade, transparência, registro urbano neutro"
+   },
+   {
+    "id": "alto_ticket",
+    "personas": [],
+    "confianca": "baixa",
+    "estilo_padrao": "a definir",
+    "ticket": "faixa alta",
+    "hipotese": "impacto e legado, destinação, Loteria Federal e SUSEP como prova, registro sóbrio; falar de contribuição maior para a causa, nunca de compra em volume para ganhar"
+   }
+  ]
+ },
+ "angulos": [
+  "solidario",
+  "aspiracional",
+  "convite_direto"
+ ],
+ "tags": {
+  "_nota": "vocabulário fechado do banco de takes (catalogo.json → tags); novos valores entram aqui antes de entrar no catálogo",
+  "segmento": [
+   "popular",
+   "classe_media",
+   "alto_ticket"
+  ],
+  "angulo": [
+   "solidario",
+   "aspiracional",
+   "convite_direto"
+  ],
+  "lugar": [
+   "varanda",
+   "feira",
+   "ponto_de_onibus",
+   "padaria",
+   "canteiro_de_obra",
+   "instituicao",
+   "rua",
+   "mesa",
+   "cozinha",
+   "escritorio"
+  ],
+  "elemento": [
+   "moeda",
+   "mao",
+   "rosto",
+   "apresentador",
+   "crianca_real",
+   "logo_casa",
+   "titulo_tela",
+   "rodape"
+  ],
+  "acao": [
+   "recebe_moeda",
+   "olha_moeda",
+   "sorri",
+   "fecha_mao",
+   "estende_moeda",
+   "toca_aqui",
+   "gesto_vem",
+   "foto_animada",
+   "parado"
+  ],
+  "estilo": [
+   "realismo-celular",
+   "realismo-cuidado",
+   "cinematografico"
+  ],
+  "duracao": [
+   "3s",
+   "4s",
+   "6s",
+   "8s"
+  ],
+  "ligacao": [
+   "continuidade_direta",
+   "corte_casado",
+   "corte_seco",
+   "abertura",
+   "fecho"
+  ],
+  "modelo": [
+   "veo-3.1-fast-720p",
+   "veo-3.1-fast-1080p",
+   "veo-3.1-padrao-1080p",
+   "nano-banana-1k",
+   "ffmpeg-foto-animada",
+   "gravacao_real"
+  ],
+  "fase": [
+   "estudo-v1",
+   "producao"
+  ]
+ },
+ "ligacoes": {
+  "continuidade_direta": "o quadro de início do take N+1 é o último quadro aprovado do take N",
+  "corte_casado": "outra cena; posição e escala da mão, moeda ou sorriso casam com o fim do take N",
+  "corte_seco": "outra cena sem casamento de posição; o ritmo (~1,2 s) faz a ligação"
+ },
+ "estacoes": [
+  "chefe-de-linha",
+  "estrategista",
+  "roteirista",
+  "diretor",
+  "auditor",
+  "diretor-de-quadros",
+  "operador-de-video",
+  "inspetor",
+  "finalizador",
+  "bibliotecario"
+ ],
+ "portoes": {
+  "G1": "partitura + decupagem",
+  "G2": "folha única de quadros",
+  "G3": "vídeo de teste",
+  "G4": "sequência montada"
+ }
+}

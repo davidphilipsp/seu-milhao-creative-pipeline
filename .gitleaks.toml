@@ -1,0 +1,11 @@
+# Extend the default gitleaks rules. The Script Room manifest and history files contain only
+# SHA-256 content hashes of input snapshots, which some generic token rules mistake for secrets.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "SHA-256 content hashes in Script Room manifests"
+condition = "AND"
+paths = ['''sala_de_roteiro/insumos/(MANIFESTO|historico/[0-9a-f]{12})\.json''']
+regexTarget = "secret"
+regexes = ['''^[0-9a-f]{64}$''']

@@ -1,0 +1,101 @@
+{
+ "criativo_atual": "TK-03",
+ "reestruturacao": {
+  "passos": {
+   "R01": {
+    "status": "ok",
+    "data": "2026-10-21T20:50:00",
+    "nota": "inventario.md, 745 arquivos"
+   },
+   "R02": {
+    "status": "ok",
+    "data": "2026-10-21T20:55:00",
+    "nota": "aprovado pelo usuário (com git init)"
+   },
+   "R03": {
+    "status": "ok",
+    "data": "2026-10-21T21:05:00",
+    "nota": "git init + commits b2bf75a/ebf14f6; 753 = 755 − 2 cópias"
+   },
+   "R04": {
+    "status": "ok",
+    "data": "2026-10-22T12:04:26",
+    "nota": "validador passou"
+   },
+   "R05": {
+    "status": "ok",
+    "data": "2026-10-21T22:23:44",
+    "nota": "validador passou"
+   },
+   "R06": {
+    "status": "ok",
+    "data": "2026-10-21T22:23:44",
+    "nota": "validador passou"
+   },
+   "R10": {
+    "status": "ok",
+    "data": "2026-10-21T22:23:44",
+    "nota": "validador passou"
+   },
+   "R07": {
+    "status": "ok",
+    "data": "2026-10-21T22:25:18",
+    "nota": "validador passou"
+   },
+   "R12": {
+    "status": "ok",
+    "data": "2026-10-21T22:25:18",
+    "nota": "validador passou"
+   },
+   "R13": {
+    "status": "ok",
+    "data": "2026-10-21T22:25:18",
+    "nota": "validador passou"
+   },
+   "R11": {
+    "status": "ok",
+    "data": "2026-10-21T22:25:18",
+    "nota": "validador passou"
+   },
+   "R08": {
+    "status": "ok",
+    "data": "2026-10-22T12:04:26",
+    "nota": "validador passou"
+   },
+   "R09": {
+    "status": "ok",
+    "data": "2026-10-21T22:31:29",
+    "nota": "validador passou"
+   },
+   "R14": {
+    "status": "ok",
+    "data": "2026-10-21T22:31:29",
+    "nota": "validador passou"
+   },
+   "R15": {
+    "status": "ok",
+    "data": "2026-10-21T22:32:56",
+    "nota": "validador passou"
+   },
+   "R16": {
+    "status": "ok",
+    "data": "2026-10-21T22:32:56",
+    "nota": "validador passou"
+   },
+   "R17": {
+    "status": "ok",
+    "data": "2026-10-21T22:36:30",
+    "nota": "aprovado pelo usuário em 21/10/2026"
+   },
+   "R18": {
+    "status": "ok",
+    "data": "2026-10-21T22:38:13",
+    "nota": "TK-03 migrado; parado em P07 (G1)"
+   }
+  }
+ },
+ "atualizado": "2026-11-09T11:14:23",
+ "teste_seco_criativo": "SECO-DEMO",
+ "geracao_liberada": false,
+ "geracao_liberada_para": null
+}

@@ -1,0 +1,25 @@
+{
+ "id": "POP-ASP-01",
+ "duracao_max_s": 30,
+ "status": "rascunho",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "corpus: ganchos da cadeira vazia e da moeda no assento (P2) foram os mais fortes no rascunho N1-01",
+  "inferencia": "aspiração doméstica > aspiração de consumo neste segmento",
+  "confianca": "alta"
+ },
+ "titulo": "O que cabe em cinquenta centavos",
+ "segmento": "popular",
+ "angulo": "aspiracional",
+ "estilo": "realismo-celular",
+ "personas": [
+  "P1",
+  "P2"
+ ],
+ "teto_usd": 30,
+ "hipotese": "Para o público popular, a aspiração convence quando é concreta e pequena (a moeda, a casa, a mesa), não quando é luxo; o prêmio entra como escada do sonho em terceira pessoa.",
+ "midia": {
+  "destino": "Meta, nível 1",
+  "formato": "9:16 sem áudio"
+ }
+}

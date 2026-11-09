@@ -1,0 +1,22 @@
+{
+ "id": "AT-ASP-01",
+ "duracao_max_s": 30,
+ "status": "rascunho",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "nenhuma observação direta no corpus",
+  "inferencia": "hipótese da missão 21/10",
+  "confianca": "baixa"
+ },
+ "titulo": "Prova e sobriedade",
+ "segmento": "alto_ticket",
+ "angulo": "aspiracional",
+ "estilo": "a definir",
+ "personas": [],
+ "teto_usd": 30,
+ "hipotese": "Para o alto ticket a aspiração é discreta: participar de algo sério e bem regulado; o prêmio aparece como fato, não como sonho.",
+ "midia": {
+  "destino": "Meta/Instagram",
+  "formato": "9:16 sóbrio"
+ }
+}

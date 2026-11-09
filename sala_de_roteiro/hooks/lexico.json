@@ -1,0 +1,401 @@
+{
+ "versao": 1,
+ "data": "2026-10-22",
+ "fonte": "insumos/corpus/ (3 arquivos) + fatos.snapshot.json; ids de origem em hooks/biblioteca_hooks.json",
+ "regras_de_uso": [
+  "Segunda pessoa só para convite (vem, entra, pode ser tu, pode ter o teu nome); nunca para diagnóstico.",
+  "Situação difícil é do personagem, em terceira pessoa.",
+  "Preço, prêmio, data e quem sorteia só pelos fatos (R$ 0,49 · R$ 100.000 · 29/11 · Loteria Federal).",
+  "Providência no máximo 1 vez por peça; Deus nunca é autor do prêmio.",
+  "Registro nordestino (tu, teu, oxe, painho, meu fi) só onde a persona pede."
+ ],
+ "vocativos": [
+  {
+   "texto": "meu fi, minha fia",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C17",
+    "corpus/meta_comunidade.txt CTA grupo 1"
+   ]
+  },
+  {
+   "texto": "meu povo",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C8–C16",
+    "corpus/mensagens_comunidade.txt M01"
+   ]
+  },
+  {
+   "texto": "meu amigo, minha amiga",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C13–C16"
+   ]
+  },
+  {
+   "texto": "meu fio",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C5"
+   ],
+   "nota": "variante; preferir 'meu fi'"
+  }
+ ],
+ "construcoes_orais": [
+  {
+   "texto": "sabe o que…",
+   "exemplo": "Sabe o que tu compra hoje com 49 centavos?",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C4",
+    "corpus/mensagens_comunidade.txt M02"
+   ]
+  },
+  {
+   "texto": "e digo mais",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C10–C13, C19"
+   ]
+  },
+  {
+   "texto": "deixa eu te contar",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C8, C9"
+   ]
+  },
+  {
+   "texto": "deixa eu te falar",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C6, C7"
+   ]
+  },
+  {
+   "texto": "deixa eu te lembrar de uma coisa rapidinho",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M01"
+   ]
+  },
+  {
+   "texto": "fala a verdade pra mim",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C15"
+   ]
+  },
+  {
+   "texto": "é aquilo, né",
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiro 'Pera'"
+   ]
+  },
+  {
+   "texto": "oxe",
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiro 'Estranho'"
+   ]
+  },
+  {
+   "texto": "pera",
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiro 'Pera'"
+   ]
+  },
+  {
+   "texto": "isso dá o quê?",
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiro 'Pera'"
+   ]
+  },
+  {
+   "texto": "pode ser tu",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M06"
+   ]
+  },
+  {
+   "texto": "responde aqui, eu quero saber",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M03"
+   ]
+  },
+  {
+   "texto": "vai que sai",
+   "fonte": [
+    "corpus/meta_comunidade.txt cena 2"
+   ]
+  }
+ ],
+ "ancora_de_preco": {
+  "regra": "o preço (R$ 0,49, fatos) contra um objeto do bolso, visível em cena",
+  "itens": [
+   {
+    "texto": "menos que essa moeda aqui",
+    "fonte": [
+     "corpus/roteiros_100mil_atemporal.txt C1, C17, C19, C20"
+    ]
+   },
+   {
+    "texto": "não compra nem um cafezinho, uma bala no sinal",
+    "fonte": [
+     "corpus/roteiros_100mil_atemporal.txt C4"
+    ]
+   },
+   {
+    "texto": "nem uma bala no sinal",
+    "fonte": [
+     "corpus/mensagens_comunidade.txt M02"
+    ]
+   },
+   {
+    "texto": "hoje em dia tu não compra nada com 49 centavinhos",
+    "fonte": [
+     "corpus/meta_comunidade.txt roteiro '10 segundos'"
+    ]
+   },
+   {
+    "texto": "isso dá o quê, uma balinha 7 Belo",
+    "fonte": [
+     "corpus/meta_comunidade.txt roteiro 'Pera'"
+    ],
+    "nota": "marca de terceiro: evitar em anúncio pago"
+   },
+   {
+    "texto": "menos que uma moeda de 50 centavos",
+    "fonte": [
+     "corpus/mensagens_comunidade.txt M01"
+    ]
+   }
+  ]
+ },
+ "providencia": {
+  "texto": "esse vídeo não apareceu por acaso",
+  "limite": "no máximo 1 vez por peça; para P5 é a única frase de providência",
+  "variantes": [
+   "essa mensagem não chegou por acaso",
+   "eu acredito que esse vídeo não apareceu por acaso pra você"
+  ],
+  "fonte": [
+   "corpus/roteiros_100mil_atemporal.txt C9–C16, C19, C20",
+   "corpus/mensagens_comunidade.txt M04",
+   "corpus/meta_comunidade.txt CTA grupo 5"
+  ]
+ },
+ "sorteio": [
+  {
+   "texto": "quem escolhe é a Loteria Federal, não sou eu",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M01, M05"
+   ]
+  },
+  {
+   "texto": "o nome ainda tá em branco",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M05"
+   ]
+  },
+  {
+   "texto": "eu nem sei quem vai receber",
+   "fonte": [
+    "corpus/mensagens_comunidade.txt M05"
+   ]
+  },
+  {
+   "texto": "uma pessoa que eu não conheço",
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiro 'Pix', cena 1"
+   ]
+  },
+  {
+   "texto": "redação fixa: o resultado sai da Loteria Federal",
+   "fonte": [
+    "fatos.snapshot.json → redacoes_fixas.sorteio_fala"
+   ]
+  }
+ ],
+ "convite": [
+  {
+   "texto": "vem com a gente",
+   "fonte": [
+    "piloto TK-03"
+   ]
+  },
+  {
+   "texto": "entra lá que eu te espero",
+   "fonte": [
+    "corpus/meta_comunidade.txt CTA grupo 5"
+   ]
+  },
+  {
+   "texto": "é só clicar aqui embaixo e entrar, leva menos tempo que ler esse vídeo",
+   "fonte": [
+    "corpus/meta_comunidade.txt CTA grupo 4"
+   ]
+  },
+  {
+   "texto": "não tem enrolação, é eu falando com você direto",
+   "fonte": [
+    "corpus/meta_comunidade.txt CTA grupo 3"
+   ]
+  },
+  {
+   "texto": "quem tá no meu grupo recebe primeiro o aviso",
+   "fonte": [
+    "corpus/meta_comunidade.txt CTA grupo 2"
+   ],
+   "nota": "sem 'a entrega na porta' (não há fato de entrega)"
+  },
+  {
+   "texto": "pode ter o teu nome",
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C10 ('com seu nome')",
+    "corpus/mensagens_comunidade.txt M05"
+   ],
+   "nota": "forma que passa do cheque"
+  }
+ ],
+ "registro_nordestino": {
+  "marcas": [
+   "tu/teu",
+   "oxe",
+   "painho",
+   "meu fi, minha fia",
+   "bote meu nome aí",
+   "tá",
+   "né"
+  ],
+  "fonte": [
+   "corpus/meta_comunidade.txt roteiro 'Pix' (Estranho)",
+   "corpus/roteiros_100mil_atemporal.txt C17, C20"
+  ],
+  "uso": "onde a persona pede (popular nordestino); fora disso, 'você' e 'meu povo'"
+ },
+ "nao_pode": [
+  {
+   "o_que": "atributo de quem assiste",
+   "exemplos": [
+    "aperriado, aperriada",
+    "devendo a agiota",
+    "você que…",
+    "tá apertado?",
+    "sem dinheiro na conta"
+   ],
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C5, C6, C20"
+   ],
+   "regra": "fatos → proibidos.atributo_segunda_pessoa + proibidos_extra abaixo"
+  },
+  {
+   "o_que": "ganhe / aposta",
+   "exemplos": [
+    "você pode ganhar R$100.000",
+    "jogar com todas elas"
+   ],
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C4–C20"
+   ],
+   "regra": "fatos → ganhe, aposta"
+  },
+  {
+   "o_que": "ganho certo",
+   "exemplos": [
+    "esse cheque vai cair na sua conta",
+    "R$100.000 na SUA CONTA",
+    "eu quero entregar esses R$100.000 pra você",
+    "aqui você não perde nunca"
+   ],
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C2, C5, C10, C11",
+    "corpus/meta_comunidade.txt linha 11"
+   ],
+   "regra": "fatos → ganho_certo, nao_perde_nunca, pix_premio + cair_na_conta, promessa_dirigida"
+  },
+  {
+   "o_que": "transformar sua vida",
+   "exemplos": [
+    "pode mudar sua vida",
+    "bilhete para uma nova vida",
+    "realizar todos os teus sonhos"
+   ],
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C13, C19",
+    "corpus/meta_comunidade.txt roteiros"
+   ],
+   "regra": "fatos → transformar_vida + mudar_de_vida"
+  },
+  {
+   "o_que": "cota ou bilhete",
+   "exemplos": [
+    "cada cota.. conta",
+    "garantir o teu bilhete"
+   ],
+   "fonte": [
+    "corpus/meta_comunidade.txt roteiros"
+   ],
+   "regra": "fatos → cota_bilhete (substituir por título)"
+  },
+  {
+   "o_que": "promoção comercial e prêmios fora do fato",
+   "exemplos": [
+    "mais 3 sorteios de R$ [prêmio extra]",
+    "Raspadão do Milhão, até R$ [prêmio instantâneo] NA HORA"
+   ],
+   "fonte": [
+    "corpus/roteiros_100mil_atemporal.txt C1–C20",
+    "corpus/mensagens_comunidade.txt M01, M08"
+   ],
+   "regra": "fatos → produto.promocao_comercial (bloqueada) + promocao_comercial abaixo"
+  }
+ ],
+ "proibidos_extra": [
+  {
+   "id": "cair_na_conta",
+   "regex": "\\bca(ir|i|iu|[ií]sse|[ií]ssem|indo)\\b.{0,30}\\b(sua|tua|na) conta\\b",
+   "motivo": "ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+  },
+  {
+   "id": "voce_que",
+   "regex": "\\b(voc[eê]|tu) que (t[aá]|est[aá]|anda|vive|precisa|deve)\\b",
+   "motivo": "diagnóstico de quem assiste em 2ª pessoa"
+  },
+  {
+   "id": "aperriado",
+   "regex": "\\baperriad[oa]s?\\b",
+   "motivo": "atributo de quem assiste (corpus C20)"
+  },
+  {
+   "id": "devendo",
+   "regex": "\\bdevendo\\b|\\bagiota\\b",
+   "motivo": "atributo financeiro de quem assiste (corpus C20)"
+  },
+  {
+   "id": "apertado",
+   "regex": "\\bt[aá] apertad[oa]\\b|sem dinheiro (na|pra)",
+   "motivo": "atributo financeiro de quem assiste (corpus C5, C6)"
+  },
+  {
+   "id": "mudar_de_vida",
+   "regex": "mud(ar|a|e) (de |a |sua |tua )vida|nova vida|realizar todos os (teus|seus) sonhos",
+   "motivo": "promessa exagerada (irmã de transformar_vida)"
+  },
+  {
+   "id": "promessa_dirigida",
+   "regex": "(quero|vou) (te )?(entregar|enviar|pagar|dar|colocar)\\b.{0,40}\\b(pra|para) (voc[eê]|ti)\\b",
+   "motivo": "promessa de prêmio dirigida a quem assiste (ganho certo)"
+  },
+  {
+   "id": "promocao_comercial",
+   "regex": "raspad[aã]o|pr[eê]mios? instant[aâ]neos?|sorteios? de r\\$ ?10",
+   "motivo": "promoção comercial bloqueada (fatos → produto.promocao_comercial)"
+  },
+  {
+   "id": "chancelada",
+   "regex": "chancelad",
+   "motivo": "a Loteria Federal só sorteia; não chancela pagamento"
+  },
+  {
+   "id": "jogar",
+   "regex": "\\bjog(ar|ue|a) com\\b",
+   "motivo": "linguagem de aposta (corpus C8)"
+  },
+  {
+   "id": "pix_premio_mil",
+   "regex": "\\bpix\\b.{0,40}\\b(100|cem) mil\\b|\\b(100|cem) mil\\b.{0,40}\\bpix\\b",
+   "motivo": "pix + prêmio escrito como '100 mil' (o regex dos fatos só pega '100.000'/'cem mil'; proposta 03)"
+  }
+ ]
+}

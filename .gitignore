@@ -1,0 +1,52 @@
+# secrets
+.env
+*.env
+*.json.key
+service-account*.json
+# authorizations / likeness terms: never in any remote repository
+fontes/autorizacoes/
+# environments
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.agents/
+.claude/agent-memory/
+.claude/skills/
+painel/_cache/
+painel/*.log
+_staging/
+_arquivo/
+# private media library (separate private repo with Git LFS)
+biblioteca/
+# production outputs and media
+criativos/*
+!criativos/.gitkeep
+ponte_capcut/
+fontes/referencia/
+fontes/corpus/
+sala_de_roteiro/saida/*
+!sala_de_roteiro/saida/.gitkeep
+data/
+outputs/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.pdf
+*.docx
+*.xlsx
+*.csv
+# private business notes
+decisoes.md
+achados-para-o-time.md
+inventario.md
+# system
+.DS_Store

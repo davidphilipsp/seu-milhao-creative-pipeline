@@ -1,0 +1,22 @@
+{
+ "id": "CM-ASP-01",
+ "duracao_max_s": 30,
+ "status": "rascunho",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "nenhuma observação direta no corpus",
+  "inferencia": "hipótese da missão 21/10",
+  "confianca": "média"
+ },
+ "titulo": "Sonho tangível",
+ "segmento": "classe_media",
+ "angulo": "aspiracional",
+ "estilo": "a definir",
+ "personas": [],
+ "teto_usd": 30,
+ "hipotese": "Um sonho tangível (reforma, viagem curta, quitar algo) em terceira pessoa, sem promessa, move a classe média mais que o prêmio em si.",
+ "midia": {
+  "destino": "Meta, nível 2",
+  "formato": "9:16"
+ }
+}

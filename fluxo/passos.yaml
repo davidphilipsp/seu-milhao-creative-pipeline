@@ -1,0 +1,21 @@
+fluxo: produção de um criativo (um cartão), P01–P18. Validadores em sistema_nervoso/sm/validadores.py.
+paralelismo: takes de corte casado rodam em paralelo; takes de continuidade direta rodam em sequência.
+passos:
+  - {id: P01, linha: Planejamento, descricao: "Cartão criado", executor: estrategista, entrada: planejamento/matriz.json, saida: planejamento/cartoes/<id>.json, validador: p01_cartao, depende_de: []}
+  - {id: P02, linha: Planejamento, descricao: "Cartão aprovado (ou lote)", executor: VOCÊ, depende_de: [P01]}
+  - {id: P03, linha: Redação, descricao: "Partitura: falas, duração pela calibração, respiros, texto de tela, ênfase, taxonomia", executor: roteirista, entrada: cartão, saida: criativos/<id>/partitura.json, validador: p03_partitura, depende_de: [P02]}
+  - {id: P04, linha: Direção, descricao: "Decupagem: takes alinhados às falas, enquadramento, ligação, estilo", executor: diretor, entrada: partitura.json, saida: criativos/<id>/decupagem.json, validador: p04_decupagem, depende_de: [P03]}
+  - {id: P05, linha: Direção, descricao: "sm banco buscar: REUSO ou GERAR em cada take", executor: script, validador: p05_banco, depende_de: [P04]}
+  - {id: P06, linha: Convergência, descricao: "Auditoria: sm lint limpo + carimbo", executor: auditor, saida: criativos/<id>/esteira/auditor_G1.json, validador: p06_auditoria, depende_de: [P05]}
+  - {id: P07, linha: Convergência, descricao: "G1: partitura + decupagem juntas", executor: VOCÊ, depende_de: [P06]}
+  - {id: P08, linha: Produção, descricao: "Quadros de todos os takes GERAR (um por take)", executor: diretor-de-quadros, validador: p08_quadros, depende_de: [P07]}
+  - {id: P09, linha: Produção, descricao: "G2: folha única de quadros", executor: VOCÊ, depende_de: [P08]}
+  - {id: P10, linha: Produção, descricao: "Testes (Fast 720p, 1 por take)", executor: operador-de-video, validador: p10_testes, depende_de: [P09]}
+  - {id: P11, linha: Produção, descricao: "Pré-filtro do inspetor", executor: inspetor, validador: p11_inspecao, depende_de: [P10]}
+  - {id: P12, linha: Produção, descricao: "G3: vídeo take a take (continuidade direta) ou em lote (corte casado)", executor: VOCÊ, depende_de: [P11]}
+  - {id: P13, linha: Produção, descricao: "Finais", executor: operador-de-video, validador: p13_finais, depende_de: [P12]}
+  - {id: P14, linha: Produção, descricao: "Montagem: sequência com grafismos e rodapé, versões com e sem copies", executor: finalizador, validador: p14_montagem, depende_de: [P13]}
+  - {id: P15, linha: Produção, descricao: "G4: sequência montada", executor: VOCÊ, depende_de: [P14]}
+  - {id: P16, linha: Expedição, descricao: "Ponte CapCut", executor: finalizador, validador: p16_ponte, depende_de: [P15]}
+  - {id: P17, linha: Expedição, descricao: "Publicação na biblioteca", executor: bibliotecario, validador: p17_publicacao, depende_de: [P16]}
+  - {id: P18, linha: Expedição, descricao: "sm custo fechar", executor: script, validador: p18_custo, depende_de: [P17]}

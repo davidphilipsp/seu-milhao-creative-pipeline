@@ -1,0 +1,65 @@
+{
+ "origem": "biblioteca/catalogo.json",
+ "itens": [
+  {
+   "id": "tk-03-sequencia_aprovada-mp4",
+   "tipo": "video",
+   "caminho": "aprovados/TK-03/sequencia_aprovada.mp4",
+   "status": "liberado",
+   "autorizacao": "sim",
+   "take_origem": "TK-03",
+   "tags": {
+    "persona": [],
+    "angulo": [],
+    "lugar": [
+     "padaria"
+    ],
+    "elemento": [
+     "moeda"
+    ],
+    "fase": [
+     "estudo-v1"
+    ]
+   },
+   "nota": "EXEMPLO sintético (catálogo real da biblioteca privada omitido)"
+  },
+  {
+   "id": "exemplo-quadro-feira-png",
+   "tipo": "imagem",
+   "caminho": "quadros/EXEMPLO/feira.png",
+   "status": "liberado",
+   "autorizacao": "sim",
+   "take_origem": "EXEMPLO",
+   "tags": {
+    "persona": [],
+    "angulo": [],
+    "lugar": [
+     "feira"
+    ],
+    "elemento": [],
+    "fase": [
+     "estudo-v1"
+    ]
+   },
+   "nota": "EXEMPLO sintético"
+  },
+  {
+   "id": "exemplo-ficha-md",
+   "tipo": "documento",
+   "caminho": "aprovados/EXEMPLO/FICHA.md",
+   "status": "liberado",
+   "autorizacao": "sim",
+   "take_origem": "EXEMPLO",
+   "tags": {
+    "persona": [],
+    "angulo": [],
+    "lugar": [],
+    "elemento": [],
+    "fase": [
+     "estudo-v1"
+    ]
+   },
+   "nota": "EXEMPLO sintético"
+  }
+ ]
+}

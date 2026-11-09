@@ -1,0 +1,27 @@
+{
+ "id": "TK-03",
+ "duracao_max_s": 30,
+ "status": "concluido",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "exploração de 21/10: feirante e padeiro de três quartos olhando a moeda funcionaram em 0–4 s; T1 do Apresentador aprovado em G4",
+  "inferencia": "corrente de sorrisos sem fala segura a atenção nos 3 primeiros segundos",
+  "confianca": "alta"
+ },
+ "titulo": "Vem com a gente",
+ "segmento": "popular",
+ "angulo": "solidario",
+ "estilo": "realismo-celular",
+ "personas": [
+  "P1",
+  "P5"
+ ],
+ "teto_usd": 45,
+ "hipotese": "Uma moeda passando de mão em mão entre gente comum sorrindo, fechando na Instituição, faz o público popular sentir pertencimento antes de qualquer oferta (nível 1).",
+ "midia": {
+  "destino": "Meta, nível 1, comunidade de WhatsApp",
+  "formato": "9:16 sem áudio + narração do Apresentador no CapCut"
+ },
+ "fase": "estudo-v1",
+ "nota": "estudo da esteira v1 (21/10): 8 takes, 30 s; clipes no banco com tag estudo-v1"
+}

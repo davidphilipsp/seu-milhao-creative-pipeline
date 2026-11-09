@@ -1,0 +1,82 @@
+{
+ "versao": 1,
+ "atualizado": "2026-10-21",
+ "eixos": {
+  "segmento": [
+   "popular",
+   "classe_media",
+   "alto_ticket"
+  ],
+  "angulo": [
+   "solidario",
+   "aspiracional"
+  ],
+  "estilo": [
+   "realismo-celular",
+   "realismo-cuidado",
+   "cinematografico",
+   "a definir"
+  ],
+  "duracao_max_s": 30
+ },
+ "linhas_paralelas": "takes de corte casado rodam em paralelo; continuidade direta em sequência (fluxo/passos.yaml)",
+ "cartoes": [
+  "TK-03",
+  "POP-ASP-01",
+  "CM-SOL-01",
+  "CM-ASP-01",
+  "AT-SOL-01",
+  "AT-ASP-01"
+ ],
+ "celulas": [
+  {
+   "segmento": "popular",
+   "angulo": "solidario",
+   "cartao": "TK-03",
+   "estilo": "realismo-celular",
+   "status": "estudo",
+   "confianca": "alta",
+   "nota": "estudo-v1; a célula popular × solidário recebe um cartão novo pelo roteiro quadro a quadro"
+  },
+  {
+   "segmento": "popular",
+   "angulo": "aspiracional",
+   "cartao": "POP-ASP-01",
+   "estilo": "realismo-celular",
+   "status": "rascunho",
+   "confianca": "alta"
+  },
+  {
+   "segmento": "classe_media",
+   "angulo": "solidario",
+   "cartao": "CM-SOL-01",
+   "estilo": "a definir",
+   "status": "rascunho",
+   "confianca": "média"
+  },
+  {
+   "segmento": "classe_media",
+   "angulo": "aspiracional",
+   "cartao": "CM-ASP-01",
+   "estilo": "a definir",
+   "status": "rascunho",
+   "confianca": "média"
+  },
+  {
+   "segmento": "alto_ticket",
+   "angulo": "solidario",
+   "cartao": "AT-SOL-01",
+   "estilo": "a definir",
+   "status": "rascunho",
+   "confianca": "baixa"
+  },
+  {
+   "segmento": "alto_ticket",
+   "angulo": "aspiracional",
+   "cartao": "AT-ASP-01",
+   "estilo": "a definir",
+   "status": "rascunho",
+   "confianca": "baixa"
+  }
+ ]
+}

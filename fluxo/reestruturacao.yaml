@@ -1,0 +1,20 @@
+missao: Reestruturar o projeto Seu Milhão como MÁQUINA DE CRIATIVOS (21/10/2026)
+passos:
+  - {id: R01, linha: Reestruturação, descricao: "Inventário: todos os arquivos e origem → destino", executor: script, saida: inventario.md, validador: r01_inventario, depende_de: []}
+  - {id: R02, linha: Reestruturação, descricao: "Aprovação do mapa de inventário", executor: VOCÊ, depende_de: [R01]}
+  - {id: R03, linha: Reestruturação, descricao: "Hierarquia criada e arquivos movidos com git mv; nada apagado", executor: script, validador: r03_hierarquia, depende_de: [R02]}
+  - {id: R04, linha: Reestruturação, descricao: "memoria/fatos.json e glossario.json, cada fato com fonte", executor: script, validador: r04_memoria, depende_de: [R03]}
+  - {id: R05, linha: Reestruturação, descricao: "Esqueleto do pacote sm: status, fato, validar", executor: script, validador: r05_sm_base, depende_de: [R04]}
+  - {id: R06, linha: Reestruturação, descricao: "sm lint com testes por proibido e substituição", executor: script, validador: r06_lint, depende_de: [R05]}
+  - {id: R07, linha: Reestruturação, descricao: "Comandos de produção com modo --seco", executor: script, validador: r07_producao, depende_de: [R06]}
+  - {id: R08, linha: Reestruturação, descricao: "MDs reescritos; nenhum valor de produto fora de fatos.json", executor: agente, validador: r08_docs, depende_de: [R04]}
+  - {id: R09, linha: Reestruturação, descricao: "Agentes da seção E", executor: agente, validador: r09_agentes, depende_de: [R08]}
+  - {id: R10, linha: Reestruturação, descricao: "fluxo/passos.yaml", executor: script, validador: r10_passos, depende_de: [R05]}
+  - {id: R11, linha: Reestruturação, descricao: "Pacotes de estilo e mesa de planejamento (6 cartões)", executor: agente, validador: r11_planejamento, depende_de: [R04]}
+  - {id: R12, linha: Reestruturação, descricao: "Calibração (sm calibrar)", executor: script, validador: r12_calibracao, depende_de: [R07]}
+  - {id: R13, linha: Reestruturação, descricao: "Biblioteca e pre-commit", executor: script, validador: r13_biblioteca, depende_de: [R07]}
+  - {id: R14, linha: Reestruturação, descricao: "Painel adaptado aos micro-passos", executor: script, validador: r14_painel, depende_de: [R10]}
+  - {id: R15, linha: Reestruturação, descricao: "Teste de ponta a ponta A SECO (P01–P18), custo US$ 0", executor: script, validador: r15_seco, depende_de: [R07, R09, R10, R11, R12, R13, R14]}
+  - {id: R16, linha: Reestruturação, descricao: "REFLEXOS.md e custos.md desta missão", executor: script, validador: r16_reflexos, depende_de: [R15]}
+  - {id: R17, linha: Reestruturação, descricao: "Aprovação da reestruturação", executor: VOCÊ, depende_de: [R16]}
+  - {id: R18, linha: Reestruturação, descricao: "Retomar TK-03 no novo fluxo a partir do passo em que estava; PARE no próximo [VOCÊ]", executor: chefe-de-linha, depende_de: [R17]}

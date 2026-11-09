@@ -1,0 +1,1363 @@
+{
+ "versao": 1,
+ "data": "2026-10-22",
+ "insumos_hash": "5fb56f2acef5",
+ "nota": "O PDF de roteiros repete os Criativos 13 e 14; o docx repete os roteiros '10 segundos' e 'sorte se propaga'. Cada repetição virou um item só. Personas P1–P5 não têm definição escrita (glossario → pendencias.personas): 'persona_provavel' é rótulo de uso.",
+ "contagem": {
+  "total": 68,
+  "por_familia": {
+   "cena em andamento": 14,
+   "pergunta": 16,
+   "objeto fora do lugar": 6,
+   "convite": 10,
+   "data como evento": 4,
+   "contradição": 7,
+   "atrito de dupla": 3,
+   "ritual da rua": 2,
+   "corrente": 6
+  },
+  "por_status": {
+   "passa com ajuste": 24,
+   "passa": 31,
+   "bloqueado": 13
+  }
+ },
+ "itens": [
+  {
+   "id": "CORP-01",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 1",
+   "texto_original": "Já imaginou esse cheque caindo na sua conta?",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / andando de patinete",
+   "gatilho": "Desejo",
+   "elemento": "Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua de bairro, Apresentador passando de patinete",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'caindo na sua conta' = ganho certo; versão que passa: cheque com o nome em branco + 'pode ter o teu nome; quem decide é a Loteria Federal'",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'caindo na sua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-02",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 2",
+   "texto_original": "Esse cheque vai cair na sua conta!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / andando de patinete",
+   "gatilho": "Desejo",
+   "elemento": "Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua de bairro, patinete",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "ganho certo e 'ganhar' no corpo; mesma correção do cheque em branco",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'cair na sua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-03",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 3",
+   "texto_original": "Esse cheque vai cair na sua conta!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / abaixando o vidro do carro",
+   "gatilho": "Desejo",
+   "elemento": "Cheque / Carro",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua, carro parado, vidro descendo",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "ganho certo; versão que passa: Apresentador sai do carro com o cheque de nome em branco (casca C-001-A)",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'cair na sua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-04",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 4",
+   "texto_original": "Sabe o que você faz com essa moeda aqui hoje?",
+   "familia": "pergunta",
+   "hook": "Surpresa / abaixando o vidro do carro",
+   "gatilho": "Objeção",
+   "elemento": "Moeda R$0,50 / Carro",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "carro parado na rua",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "abertura passa; o corpo usa 'pode ganhar' e promoção comercial (3 × R$ [prêmio extra], Raspadão): cortar",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-05",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 5",
+   "texto_original": "Tá querendo trocar ou comprar um carro novo mas tá apertado?",
+   "familia": "pergunta",
+   "hook": "Surpresa / abaixando o vidro do carro",
+   "gatilho": "Desejo",
+   "elemento": "Carro",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "carro",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'tá apertado' = atributo de quem assiste; o aperto passa a ser de um personagem, em 3ª pessoa",
+    "lint_fatos_snapshot": [
+     "lint [apertado] 'tá apertado': atributo financeiro de quem assiste (corpus C5, C6)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-06",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 6",
+   "texto_original": "Você também fica assim né, sem dinheiro na conta e esperando um sinal divino pra agir na vida.",
+   "familia": "pergunta",
+   "hook": "Pergunta / tá esperando um sinal divino",
+   "gatilho": "Desejo",
+   "elemento": "Olhando pro céu",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "ao ar livre, olhando o céu",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "diagnóstico de quem assiste ('sem dinheiro na conta') + atributo religioso; o núcleo do gancho é o diagnóstico",
+    "lint_fatos_snapshot": [
+     "lint [apertado] 'sem dinheiro na': atributo financeiro de quem assiste (corpus C5, C6)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-07",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 7",
+   "texto_original": "O que você faria com R$100.000?",
+   "familia": "pergunta",
+   "hook": "Pergunta / o que você faria com R$100.000?",
+   "gatilho": "Desejo",
+   "elemento": "Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "indefinido",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "abertura passa; o corpo tem 'aquele aperto que só você sabe' (atributo) e 'ganhar': cortar",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-08",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 8",
+   "texto_original": "Olha essas moedas aqui, de R$0,50, parece pouco né, mas aqui tem R$ [valor] em dinheiro",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / jogando moedas na mesa",
+   "gatilho": "Objeção",
+   "elemento": "Moedas R$0,50",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "mesa",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "várias moedas por plano (moeda.acoes_proibidas) + 'jogar com todas elas' (aposta) + escalonamento (suspenso no nível 1)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-09",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 9",
+   "texto_original": "Eu sei que você tem esse sonho de conquistar a casa própria. Eu também tinha e consegui.",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / abrindo porta",
+   "gatilho": "Desejo",
+   "elemento": "Porta de casa",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "porta de casa",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "atribui o sonho a quem assiste e afirma algo do Apresentador sem fonte; o sonho vira do personagem",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-10",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 10",
+   "texto_original": "Tô saindo de casa aqui agora pra ir entregar esse cheque de R$100.000 pra VOCÊ",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / abrindo porta",
+   "gatilho": "Cheque",
+   "elemento": "Porta de casa / Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "porta de casa, saindo",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "promessa dirigida (ganho certo) + escalonamento no corpo; versão que passa: 'pra alguém que eu não conheço'",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-11",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 11",
+   "texto_original": "Essa aqui pode ser sua realidade, R$100.000 na SUA CONTA!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / Pix na tela",
+   "gatilho": "Desejo",
+   "elemento": "Print de conta do banco",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "tela de celular",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "print de conta bancária com o valor = tela enganosa + meio de pagamento não definido; texto de tela não vem do gerador",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-12",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 12",
+   "texto_original": "R$100.000 enviados, pra o último ganhador, agora eu quero ENVIAR PRA VOCÊ!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / Pix na tela",
+   "gatilho": "Desejo",
+   "elemento": "Print de conta do banco",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "tela de celular",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "não há 'último ganhador' nos fatos (o sorteio é 29/11/2026) + promessa dirigida",
+    "lint_fatos_snapshot": [
+     "lint [promessa_dirigida] 'quero ENVIAR PRA VOCÊ': promessa de prêmio dirigida a quem assiste (ganho certo)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-13",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 13",
+   "texto_original": "O que tá dentro desse envelope pode mudar sua vida e você não faz ideia do que é",
+   "familia": "objeto fora do lugar",
+   "hook": "Surpresa / envelope",
+   "gatilho": "Desejo",
+   "elemento": "Envelope / Cheque / Moeda",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "mãos com envelope",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'mudar sua vida' = promessa exagerada; o envelope com a moeda dentro passa sem a promessa",
+    "lint_fatos_snapshot": [
+     "lint [mudar_de_vida] 'mudar sua vida': promessa exagerada (irmã de transformar_vida)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-14",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 14",
+   "texto_original": "O que tá dentro desse envelope pode mudar sua vida e você não faz ideia do que é (nota de dinheiro)",
+   "familia": "objeto fora do lugar",
+   "hook": "Surpresa / envelope",
+   "gatilho": "Desejo",
+   "elemento": "Envelope / nota de dinheiro",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "mãos com envelope",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "reprodução de cédula (Lei 4.511/1964, Mecir) + escalonamento '10x' (suspenso) + 'mudar sua vida'",
+    "lint_fatos_snapshot": [
+     "lint [mudar_de_vida] 'mudar sua vida': promessa exagerada (irmã de transformar_vida)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-15",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 15",
+   "texto_original": "O que você tá esperando pra ir tirar aquelas férias dos sonhos? Em um resort, Maldivas…",
+   "familia": "pergunta",
+   "hook": "Surpresa / piscina",
+   "gatilho": "Desejo",
+   "elemento": "Piscina",
+   "persona_provavel": "classe média? (hipótese)",
+   "ambiente_fisico": "piscina de resort",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'É dinheiro né, fala a verdade' atribui falta de dinheiro; luxo distante do segmento popular",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-16",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 16",
+   "texto_original": "O que você tá esperando pra ir tirar aquelas férias dos sonhos?",
+   "familia": "pergunta",
+   "hook": "Surpresa / envelope",
+   "gatilho": "Desejo",
+   "elemento": "Envelope",
+   "persona_provavel": "classe média? (hipótese)",
+   "ambiente_fisico": "mãos com envelope",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "mesma abertura do C15; corpo com 'ganhar' e promoção comercial",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-17",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 17",
+   "texto_original": "Meu fi, minha fia. Já imaginou esse cheque caindo na sua conta?",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / andando de bicicleta",
+   "gatilho": "Desejo",
+   "elemento": "Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua, bicicleta",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "ganho certo; vocativo é o melhor do corpus",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'caindo na sua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-18",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 18",
+   "texto_original": "Esse cheque vai cair na sua conta!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / andando de bicicleta",
+   "gatilho": "Desejo",
+   "elemento": "Cheque",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua, bicicleta",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "ganho certo; correção do cheque em branco",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'cair na sua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-19",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 19",
+   "texto_original": "Me dá esse tempinho aqui que eu vou mudar sua vida!",
+   "familia": "cena em andamento",
+   "hook": "Surpresa / cronômetro",
+   "gatilho": "Desejo",
+   "elemento": "Cheque / Cronômetro / Moeda",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "indefinido",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'mudar sua vida'; cronômetro funciona como contagem até 29/11",
+    "lint_fatos_snapshot": [
+     "lint [mudar_de_vida] 'mudar sua vida': promessa exagerada (irmã de transformar_vida)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "CORP-20",
+   "origem": "corpus/roteiros_100mil_atemporal.txt · Criativo 20",
+   "texto_original": "Eu sei que você tá ai aperriado, aperriada, devendo a agiota, com conta pra pagar e sem dinheiro nem pra respirar.",
+   "familia": "pergunta",
+   "hook": "Surpresa / andando de bicicleta",
+   "gatilho": "Desejo",
+   "elemento": "Cheque / Moeda",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "rua, bicicleta",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "diagnóstico financeiro de quem assiste (política do Meta); sem versão que preserve o gancho",
+    "lint_fatos_snapshot": [
+     "lint [aperriado] 'aperriado': atributo de quem assiste (corpus C20)",
+     "lint [aperriado] 'aperriada': atributo de quem assiste (corpus C20)",
+     "lint [devendo] 'devendo': atributo financeiro de quem assiste (corpus C20)",
+     "lint [devendo] 'agiota': atributo financeiro de quem assiste (corpus C20)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-01",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 1",
+   "texto_original": "Boa tardee, meu povo! Deixa eu te lembrar de uma coisa rapidinho",
+   "familia": "convite",
+   "hook": "Saudação + lembrete",
+   "gatilho": "Pertencimento",
+   "elemento": "Moeda de 50 centavos (comparação)",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo de WhatsApp",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "abertura passa; corpo traz escalonamento (suspenso no nível 1) e promoção comercial (bloqueada)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-02",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 2",
+   "texto_original": "Sabe o que tu compra hoje com 49 centavos? Nem uma bala no sinal.",
+   "familia": "pergunta",
+   "hook": "Pergunta de preço",
+   "gatilho": "Objeção",
+   "elemento": "Bala / moeda",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "sinal de trânsito (implícito)",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "âncora de preço contra objeto do bolso",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-03",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 3",
+   "texto_original": "Se caíssem R$100 mil na tua conta, qual era a primeira coisa que tu fazia?",
+   "familia": "pergunta",
+   "hook": "Pergunta aberta",
+   "gatilho": "Desejo",
+   "elemento": "Conta",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'cair na conta' (meio de pagamento não definido); versão que passa: 'se o número que sair for o teu, o que tu faz?'",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'caíssem R$100 mil na tua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-04",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 4",
+   "texto_original": "Antes de dormir 🙏 Eu acredito que essa mensagem não chegou por acaso.",
+   "familia": "convite",
+   "hook": "Providência",
+   "gatilho": "Fé / pertencimento",
+   "elemento": "—",
+   "persona_provavel": "P5? (providência)",
+   "ambiente_fisico": "noite, grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "1 frase de providência; Deus não é autor do prêmio",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-05",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 5",
+   "texto_original": "Muita gente me pergunta: \"Apresentador, quem escolhe o ganhador?\" Não sou eu.",
+   "familia": "pergunta",
+   "hook": "Pergunta de objeção",
+   "gatilho": "Confiança",
+   "elemento": "Loteria Federal / nome em branco",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "responde 'isso é golpe?' com o fato do sorteio; 'o nome ainda tá em branco' é a melhor ponte do corpus",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-06",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 6",
+   "texto_original": "Bom dia! Faltam [X] dias. Painho já circulou a data",
+   "familia": "data como evento",
+   "hook": "Contagem",
+   "gatilho": "Evento marcado",
+   "elemento": "Calendário",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "manhã, grupo",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'pix de R$100 mil' no corpo (pix_premio); P4 não recebe contagem (urgência)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-07",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 7",
+   "texto_original": "R$100 mil é o quê?",
+   "familia": "pergunta",
+   "hook": "Escada do sonho em lista",
+   "gatilho": "Desejo",
+   "elemento": "casa, carro, conta quitada, viagem",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "escada do sonho sem atributo de quem assiste",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-08",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 8",
+   "texto_original": "Pouca gente sabe disso 👀 Quem garante o título não concorre só aos R$100 mil.",
+   "familia": "contradição",
+   "hook": "Segredo",
+   "gatilho": "Curiosidade",
+   "elemento": "sorteios extras",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "todo o conteúdo é promoção comercial (3 × R$ [prêmio extra], Raspadão até R$ [prêmio instantâneo]): bloqueada nos fatos",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "MSG-09",
+   "origem": "corpus/mensagens_comunidade.txt · mensagem 9",
+   "texto_original": "Quem colocar R$ [valor] no Seu Milhão sai com 10x mais chances de levar os R$100 mil.",
+   "familia": "convite",
+   "hook": "Escalonamento",
+   "gatilho": "Volume",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grupo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "escalonamento é o movimento 5, suspenso no nível 1",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-01",
+   "origem": "corpus/meta_comunidade.txt · cena 1",
+   "texto_original": "Painho com um calendário, circulando a data com caneta: \"Dia 31 eu vou pagar alguém que eu não conheço.\"",
+   "familia": "data como evento",
+   "hook": "Calendário circulado",
+   "gatilho": "Evento marcado",
+   "elemento": "Calendário / caneta",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "cozinha ou sala, calendário de parede",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "data divergente (o sorteio é 29/11) e Painho de IA não fala nem olha a lente; vira Apresentador em off: 'Painho circulou o 29'",
+    "lint_fatos_snapshot": [
+     "lint [fato_data] 'Dia 31': o sorteio é dia 29"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-02",
+   "origem": "corpus/meta_comunidade.txt · cena 2",
+   "texto_original": "Apresentador mostra o título dele na tela do celular: \"Esse número é meu. Vai que sai. O teu?\"",
+   "familia": "convite",
+   "hook": "Apresentador com o celular",
+   "gatilho": "Pertencimento",
+   "elemento": "Celular com o título",
+   "persona_provavel": "P1?",
+   "ambiente_fisico": "indefinido",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "texto da tela do celular entra na montagem (nunca no gerador); 'o teu?' é convite",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-03",
+   "origem": "corpus/meta_comunidade.txt · cena 3",
+   "texto_original": "Cheque pronto, campo do nome em branco, Painho de caneta na mão: \"Falta uma coisa aqui.\"",
+   "familia": "objeto fora do lugar",
+   "hook": "Cheque com nome em branco",
+   "gatilho": "Lacuna",
+   "elemento": "Cheque / caneta",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "mesa",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "a lacuna do nome é o gancho; valor do cheque só por texto de montagem",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-04",
+   "origem": "corpus/meta_comunidade.txt · cena 4",
+   "texto_original": "Empresária no campo pro narrador: \"Anuncia aí a data como se fosse jogo.\" O narrador anuncia o sorteio ao microfone.",
+   "familia": "atrito de dupla",
+   "hook": "Narrador de várzea",
+   "gatilho": "Evento",
+   "elemento": "Microfone / campo",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "campo de várzea, torcida",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "política ok; produção: duas pessoas + torcida = grupo (só gravação real)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-05",
+   "origem": "corpus/meta_comunidade.txt · cena 5",
+   "texto_original": "Apresentador com o comprovante de mil reais do gol: \"Esse eu já paguei. Esse é o treino.\"",
+   "familia": "cena em andamento",
+   "hook": "Comprovante",
+   "gatilho": "Prova",
+   "elemento": "Comprovante de R$ [prêmio instantâneo]",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "campo",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "R$ [prêmio instantâneo] é da promoção comercial (bloqueada) e não há fato de pagamento",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-06",
+   "origem": "corpus/meta_comunidade.txt · cena 6",
+   "texto_original": "Painho pra câmera, sem Apresentador: \"Eu não escolho. A Caixa escolhe. Se eu pudesse escolher, não valia.\"",
+   "familia": "contradição",
+   "hook": "Frase que parece errada",
+   "gatilho": "Confiança",
+   "elemento": "—",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "indefinido",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "quem sorteia é a Loteria Federal (redação fixa); Painho de IA não olha a lente nem fala",
+    "lint_fatos_snapshot": [
+     "lint [fato_sorteio] 'Caixa': quem sorteia é a Loteria Federal (redação fixa)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-07",
+   "origem": "corpus/meta_comunidade.txt · cena 7",
+   "texto_original": "Cronômetro do corpus, agora com sentido: contagem até a data, atualizada a cada post.",
+   "familia": "data como evento",
+   "hook": "Contagem",
+   "gatilho": "Evento marcado",
+   "elemento": "Cronômetro",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "grafismo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "contagem fica fora de peças para P4 (sem urgência)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-08",
+   "origem": "corpus/meta_comunidade.txt · cena 8",
+   "texto_original": "Comprovante da doação pra Instituição Parceira antes do sorteio: \"Antes de alguém ganhar, isso aqui já saiu.\"",
+   "familia": "contradição",
+   "hook": "Comprovante",
+   "gatilho": "Prova",
+   "elemento": "Comprovante",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "indefinido",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "não existe fato de doação antecipada (o mecanismo é a cessão do resgate) + 'ganhar'",
+    "lint_fatos_snapshot": [
+     "lint [ganhe] 'ganhar': ganho certo / linguagem de aposta (PLAYBOOK §2)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-09",
+   "origem": "corpus/meta_comunidade.txt · cena 9",
+   "texto_original": "Batata ao telefone, voz só, Empresária repassa: \"O patrão disse que vai assistir o sorteio aqui no campo, com vocês.\"",
+   "familia": "ritual da rua",
+   "hook": "Telefonema",
+   "gatilho": "Pertencimento",
+   "elemento": "Telefone / campo",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "campo de várzea",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "produção: só gravação real (pessoas reais do time)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-10",
+   "origem": "corpus/meta_comunidade.txt · cena 10",
+   "texto_original": "Entrevista na várzea: \"Se o número que sair for o teu, o que tu faz?\" Cortes rápidos, três jogadores, sem Apresentador.",
+   "familia": "pergunta",
+   "hook": "Entrevista",
+   "gatilho": "Desejo",
+   "elemento": "Microfone",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "várzea",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "três rostos falando para a lente = só gravação real (IA bloqueada)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-11",
+   "origem": "corpus/meta_comunidade.txt · linha 11",
+   "texto_original": "Aqui você não perde nunca",
+   "familia": "contradição",
+   "hook": "Frase",
+   "gatilho": "Segurança",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "ganho certo (fatos → nao_perde_nunca)",
+    "lint_fatos_snapshot": [
+     "lint [nao_perde_nunca] 'não perde nunca': ganho certo (adendo 20/10)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-12",
+   "origem": "corpus/meta_comunidade.txt · linha 12",
+   "texto_original": "Aqui a sorte se multiplica",
+   "familia": "corrente",
+   "hook": "Frase",
+   "gatilho": "Pertencimento",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'multiplica' sugere retorno; usar 'a sorte se propaga' (piloto)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-13",
+   "origem": "corpus/meta_comunidade.txt · linha 13",
+   "texto_original": "Quarenta e nove centavos. Quantas refeições isso vira?",
+   "familia": "pergunta",
+   "hook": "Pergunta solidária",
+   "gatilho": "Reciprocidade",
+   "elemento": "Moeda",
+   "persona_provavel": "P3/P4? (solidário)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "não há fato que converta título em refeições; a destinação tem redação fixa",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-14",
+   "origem": "corpus/meta_comunidade.txt · linha 14",
+   "texto_original": "Quanto mais títulos vendidos, mais gente o seu milhão ajuda",
+   "familia": "corrente",
+   "hook": "Frase",
+   "gatilho": "Reciprocidade",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "inferência sem número; usar a redação fixa da destinação",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-15",
+   "origem": "corpus/meta_comunidade.txt · CTA grupo 1",
+   "texto_original": "Meu fi, minha fia, eu tô entregando coisa boa aqui todo dia e você tá sabendo depois de todo mundo",
+   "familia": "convite",
+   "hook": "CTA para o grupo",
+   "gatilho": "Pertencimento / FOMO",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'você tá sabendo depois de todo mundo' atribui atraso a quem assiste; manter o vocativo e o convite",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-16",
+   "origem": "corpus/meta_comunidade.txt · CTA grupo 2",
+   "texto_original": "Quem tá no meu grupo recebe primeiro: o aviso, o bastidor e a entrega na porta da pessoa",
+   "familia": "convite",
+   "hook": "CTA para o grupo",
+   "gatilho": "Exclusividade",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'a entrega na porta' sem fato; manter 'o aviso e o bastidor'",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-17",
+   "origem": "corpus/meta_comunidade.txt · CTA grupo 3",
+   "texto_original": "Não tem enrolação, não tem mensagem de madrugada, é eu falando com você direto",
+   "familia": "convite",
+   "hook": "CTA para o grupo",
+   "gatilho": "Confiança",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "responde a objeção de spam",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-18",
+   "origem": "corpus/meta_comunidade.txt · CTA grupo 4",
+   "texto_original": "É só clicar aqui embaixo e entrar, leva menos tempo que ler esse vídeo",
+   "familia": "convite",
+   "hook": "CTA para o grupo",
+   "gatilho": "Facilidade",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "CTA de nível 1 (entrar no grupo)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-19",
+   "origem": "corpus/meta_comunidade.txt · CTA grupo 5",
+   "texto_original": "Eu acredito que esse vídeo não apareceu por acaso pra você, entra lá que eu te espero",
+   "familia": "convite",
+   "hook": "CTA com providência",
+   "gatilho": "Fé / pertencimento",
+   "elemento": "—",
+   "persona_provavel": "P5? (providência)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "providência 1 vez; é o movimento 6 do esqueleto",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-20",
+   "origem": "corpus/meta_comunidade.txt · roteiro 'Pix'",
+   "texto_original": "No dia 29 de novembro, eu vou enviar 100 mil reais no pix para uma pessoa que EU NÃO CONHEÇO!",
+   "familia": "contradição",
+   "hook": "Frase que parece errada",
+   "gatilho": "Curiosidade",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'pix' + prêmio (meio não definido) e 'essa pessoa pode ser você'; versão: 'uma pessoa que eu não conheço; quem escolhe é a Loteria Federal'",
+    "lint_fatos_snapshot": [
+     "lint [pix_premio_mil] '100 mil reais no pix': pix + prêmio escrito como '100 mil' (o regex dos fatos só pega '100.000'/'cem mil'; proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-21",
+   "origem": "corpus/meta_comunidade.txt · roteiro 'Pera'",
+   "texto_original": "Pera: se no dia 29 de novembro, 100 mil caísse na tua conta, o que você faria???",
+   "familia": "pergunta",
+   "hook": "Pergunta aberta",
+   "gatilho": "Desejo",
+   "elemento": "—",
+   "persona_provavel": "popular (rótulo P1–P5 sem definição escrita)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'caísse na tua conta'; corpo com 'mais chances de ganhar' e 'mudar de vida'",
+    "lint_fatos_snapshot": [
+     "lint [cair_na_conta] 'caísse na tua conta': ganho certo / meio de pagamento não definido no regulamento (lacuna do sm lint: proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-22",
+   "origem": "corpus/meta_comunidade.txt · roteiro '10 segundos' (2×)",
+   "texto_original": "em 10 segundos eu te explico como você pode levar 100 mil no pix, e transferência e chancelada pela LOTERIA FEDERAL!",
+   "familia": "pergunta",
+   "hook": "Promessa de explicação",
+   "gatilho": "Curiosidade",
+   "elemento": "Ticket da fantástica fábrica",
+   "persona_provavel": "classe média? (hipótese: 'mecanismo em 10 s')",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "bloqueado",
+    "motivo": "pix + prêmio, 'chancelada', 'bilhete para uma nova vida' e ticket de marca de terceiro",
+    "lint_fatos_snapshot": [
+     "lint [chancelada] 'chancelad': a Loteria Federal só sorteia; não chancela pagamento",
+     "lint [pix_premio_mil] '100 mil no pix': pix + prêmio escrito como '100 mil' (o regex dos fatos só pega '100.000'/'cem mil'; proposta 03)"
+    ]
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "META-23",
+   "origem": "corpus/meta_comunidade.txt · roteiro 'sorte se propaga' (2×)",
+   "texto_original": "No seu milhão a sorte se propaga! Somos parceiros da Instituição Parceira",
+   "familia": "corrente",
+   "hook": "Frase de marca",
+   "gatilho": "Reciprocidade",
+   "elemento": "Instituição Parceira",
+   "persona_provavel": "P1/P3 (solidário)",
+   "ambiente_fisico": "—",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa com ajuste",
+    "motivo": "'cota' (proibido) e 'destina uma parcela' fora da redação fixa; nome da entidade completo",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H01",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho põe prato pra quem não vem há três anos.",
+   "familia": "objeto fora do lugar",
+   "hook": "visual · prato cheio + cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "prato cheio + cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "cozinha na hora do almoço",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: três pessoas comendo = grupo; Painho de costas",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H02",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Toda semana aparece uma moeda nessa cadeira.",
+   "familia": "objeto fora do lugar",
+   "hook": "visual · moeda de 50 centavos + cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "moeda de 50 centavos + cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "assento de cadeira na cozinha",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H03",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Tem um cartão sem nome nessa mesa.",
+   "familia": "objeto fora do lugar",
+   "hook": "visual · cartão em branco + copo",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cartão em branco + copo",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "mesa posta",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H04",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "A cadeira mais cheia dessa casa é a vazia.",
+   "familia": "contradição",
+   "hook": "visual · cadeira vazia sob a luz da janela",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia sob a luz da janela",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "sala lotada de domingo",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: sala lotada = grupo",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H05",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho não deixa ninguém sentar aí. Nem ele.",
+   "familia": "contradição",
+   "hook": "visual · cadeira vazia + criança",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia + criança",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "cozinha",
+   "objeto_concreto": "não",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: criança por IA: bloqueado na produção",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H06",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho, bora tirar essa cadeira daqui. / Essa fica.",
+   "familia": "atrito de dupla",
+   "hook": "visual · cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "cozinha",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: dois corpos no plano",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H07",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Levei cadeira nova pro Painho. Ele devolveu.",
+   "familia": "atrito de dupla",
+   "hook": "visual · cadeira vazia + cadeira nova",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia + cadeira nova",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "porta da cozinha",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: dois corpos no plano",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H08",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Almoço acabou. O prato daquela cadeira continua cheio.",
+   "familia": "cena em andamento",
+   "hook": "visual · prato cheio + cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "prato cheio + cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "fim de almoço",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H09",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho virou a cadeira pra rua. De novo.",
+   "familia": "cena em andamento",
+   "hook": "visual · cadeira vazia + janela",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia + janela",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "sala, fim de tarde",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: luz de fim de tarde contraria o padrão nublado",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H10",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Toda família tem uma cadeira assim. Por quê?",
+   "familia": "pergunta",
+   "hook": "visual · mesa vista de cima + cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "mesa vista de cima + cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "mesa posta",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: mãos de três pessoas",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H11",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho leva duas cadeiras pro campo. Senta numa só.",
+   "familia": "ritual da rua",
+   "hook": "visual · cadeira vazia + boné + campo",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "cadeira vazia + boné + campo",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "beira de campo de várzea",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data · produção: torcida = grupo",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-CV-H12",
+   "origem": "_arquivo/criativos/N1-01/roteiro/ganchos-H01-H12.md (cadeira vazia, 20/10)",
+   "texto_original": "Painho circulou um dia. E puxou a cadeira.",
+   "familia": "data como evento",
+   "hook": "visual · calendário circulado + cadeira vazia",
+   "gatilho": "curiosidade / lacuna",
+   "elemento": "calendário circulado + cadeira vazia",
+   "persona_provavel": "P2 (Painho)",
+   "ambiente_fisico": "cozinha, calendário de parede",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "situação é do Painho, em 3ª pessoa; sem dinheiro nem data",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "não",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-SP-H1",
+   "origem": "_arquivo/criativos/N1-01/roteiro/roteiro.json (A sorte se propaga, gancho H1)",
+   "texto_original": "Essa moeda não para na minha mão.",
+   "familia": "corrente",
+   "hook": "visual · mão recebe a moeda e passa adiante",
+   "gatilho": "pertencimento",
+   "elemento": "moeda + corrente de mãos",
+   "persona_provavel": "P1 (P5 secundária)",
+   "ambiente_fisico": "feira → ponto de ônibus → balcão de padaria",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "moeda sem prêmio; passou nas checagens v1–v5 do N1-01",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "sim",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-SP-H2",
+   "origem": "_arquivo/criativos/N1-01/roteiro/roteiro.json (A sorte se propaga, gancho H2)",
+   "texto_original": "Tem sorte que não é só tua.",
+   "familia": "corrente",
+   "hook": "visual · moeda cai na mão, que fecha e abre para outra",
+   "gatilho": "pertencimento",
+   "elemento": "moeda + mãos",
+   "persona_provavel": "P1 (P5 secundária)",
+   "ambiente_fisico": "mãos em close",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "'tua' é convite, não diagnóstico",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "sim",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-TK03-T1",
+   "origem": "criativos/TK-03/partitura.json (Vem com a gente, T1)",
+   "texto_original": "VEM COM A GENTE",
+   "familia": "convite",
+   "hook": "visual · Apresentador olha a lente, sorri e estende a moeda",
+   "gatilho": "pertencimento e reciprocidade leve",
+   "elemento": "Apresentador + moeda",
+   "persona_provavel": "P1 (P5 secundária)",
+   "ambiente_fisico": "rua, celular de espectador",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "Apresentador réplica é a exceção do olhar; no banco como tk-03-t1-take (estudo-v1)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "sim",
+   "desempenho": "desconhecido"
+  },
+  {
+   "id": "PIL-TK03-CORRENTE",
+   "origem": "criativos/TK-03/partitura.json (Vem com a gente, T2–T5)",
+   "texto_original": "(sem fala) a moeda passa de mão em mão: feira, ponto de ônibus, padaria, canteiro",
+   "familia": "corrente",
+   "hook": "visual · corrente de sorrisos",
+   "gatilho": "pertencimento",
+   "elemento": "moeda + mãos + sorriso no pico",
+   "persona_provavel": "P1 (P5 secundária)",
+   "ambiente_fisico": "feira · ponto de ônibus · padaria · canteiro",
+   "objeto_concreto": "sim",
+   "politica": {
+    "status": "passa",
+    "motivo": "texto do prêmio só sobre a mão; sequência aprovada no banco (estudo-v1)",
+    "lint_fatos_snapshot": []
+   },
+   "produzido_em_video": "sim",
+   "desempenho": "desconhecido"
+  }
+ ]
+}

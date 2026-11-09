@@ -1,0 +1,23 @@
+{
+ "id": "SECO-DEMO",
+ "titulo": "Teste de ponta a ponta a seco",
+ "segmento": "popular",
+ "angulo": "solidario",
+ "estilo": "realismo-celular",
+ "duracao_max_s": 12,
+ "personas": [
+  "P1"
+ ],
+ "hipotese": "cartão fictício para validar a esteira inteira sem gasto (R15)",
+ "teto_usd": 10,
+ "status": "aprovado",
+ "observacao_x_inferencia": {
+  "observacao": "nenhuma",
+  "inferencia": "teste",
+  "confianca": "baixa"
+ },
+ "midia": {
+  "destino": "nenhum",
+  "formato": "9:16"
+ }
+}

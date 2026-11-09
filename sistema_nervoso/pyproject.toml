@@ -1,0 +1,19 @@
+[project]
+name = "sm"
+version = "0.1.0"
+description = "Sistema nervoso da máquina de criativos do Seu Milhão: reflexos em Python, sem gastar token."
+requires-python = ">=3.12"
+dependencies = ["typer>=0.12", "pyyaml>=6", "jsonschema>=4", "pillow>=10", "numpy>=1.26"]
+
+[project.scripts]
+sm = "sm.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["sm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,24 @@
+{
+ "hash": "5fb56f2acef5",
+ "data": "2026-10-22T12:00:00",
+ "arquivos": {
+  "fatos.snapshot.json": "c6fbf2232d1280ad433ece5435b57726f0a77e01cc2ac1436cb7530a3685af2c",
+  "glossario.snapshot.json": "8df54d6389546a2c778d0f188ce444ca32a1da86beb6a4d4b3abf4b581079c15",
+  "calibracao.snapshot.json": "507773a6daf5f963f62b79d7f08d5e3e6dd38d633c3d30d30cfa3eb2ac0a71a1",
+  "modelo_roteiro.snapshot.md": "bc49a8bff6f2dcd22032e4b2097f169938ce2abd205adae3080fff379a967db5",
+  "playbook_resumo.snapshot.md": "ca8d18be630f6365961e1180df0ad67464e08cfe0231210aa56c9eb8d2c9765f",
+  "segmentos/alto_ticket.md": "4e569b34495c6e9bd86c16938d7d7f122ec8d49fe2af25e4edac7d7aeff30a23",
+  "segmentos/classe_media.md": "630a95145422449f21fc03084b29614e041055f1c59fb31b53fb5eb01d9bfcba",
+  "segmentos/popular.md": "133245fce16cb594bb44af922b483814b82ab0764dc65b1c777a9911181fdfbf",
+  "estilos/cinematografico/bloco.txt": "66ac58698db6e25ec65d4a88804fc6278c8140c3284586b5b3c8cfab8cc658cd",
+  "estilos/realismo-celular/bloco.txt": "56cae883ab862cc04d570d87bc06ab00c6043b62150e154b321d2ddf0945608e",
+  "estilos/realismo-cuidado/bloco.txt": "9a7fd8634ece9f6df9b05ec1fc3e373e3bbcfff72038b9ea39137eb8c9fc3b07",
+  "estilos/cinematografico/negativos.txt": "433a2dd16b8da5eaf6d9b2bb5ad3851eee47e827b60f88ebd3397feabc4db979",
+  "estilos/realismo-celular/negativos.txt": "7fd2a9794acfd09a3cddf2b4c0abc7900fb8e4ed5d0a0b055405c152140222e2",
+  "estilos/realismo-cuidado/negativos.txt": "433a2dd16b8da5eaf6d9b2bb5ad3851eee47e827b60f88ebd3397feabc4db979",
+  "estilos/cinematografico/licoes.md": "0f12cab492f9fc7beadcf06748e8dea783847a6614d03a4ed8c22002e413d0a3",
+  "estilos/realismo-celular/licoes.md": "735f1415d6532d1d5f2907ee6b75a3836c883bad9b11ab6654230895a69008d5",
+  "estilos/realismo-cuidado/licoes.md": "ac8a066d9f9826542b6a3b8ef6ce72f3981a086ead014d3227c24b984ed61db6",
+  "banco.snapshot.json": "98d66c3680ec45be77f4f34c68c931bc963ce6d0dc79c098ef404bd5db144a70"
+ }
+}

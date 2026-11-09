@@ -1,0 +1,22 @@
+{
+ "id": "CM-SOL-01",
+ "duracao_max_s": 30,
+ "status": "rascunho",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "nenhuma observação direta no corpus",
+  "inferencia": "segmento valoriza praticidade e prova; hipótese da missão 21/10",
+  "confianca": "média"
+ },
+ "titulo": "Transparência que convence",
+ "segmento": "classe_media",
+ "angulo": "solidario",
+ "estilo": "a definir",
+ "personas": [],
+ "teto_usd": 30,
+ "hipotese": "A classe média adere ao solidário quando vê o mecanismo (cessão do resgate, Loteria Federal, SUSEP) explicado em 10 s, em registro urbano neutro.",
+ "midia": {
+  "destino": "Meta, nível 2–3",
+  "formato": "9:16, ticket de cinco a dez reais"
+ }
+}

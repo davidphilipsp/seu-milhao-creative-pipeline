@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel · Seu Milhão</title>
+<style>
+:root{--bg:#0d1845;--panel:#132b5e;--ink:#f1f1f5;--muted:#9fb0d8;--cinza:#6b7280;--amarelo:#FFCE00;--verde:#22c55e;--vermelho:#ef4444;--azul:#0080FF}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.4 -apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;gap:12px;align-items:center;padding:10px 16px;background:#000E3E;border-bottom:1px solid #243b7a;flex-wrap:wrap}
+header h1{font-size:17px;margin:0;color:var(--amarelo)}
+select,input,textarea,button{font:inherit;border-radius:8px;border:1px solid #2d4a8f;background:#0b1a3f;color:var(--ink);padding:6px 10px}
+button{cursor:pointer;background:var(--azul);border-color:#6DD9FF}button.sec{background:#1e2f5e}button.ok{background:var(--verde);color:#062}button.no{background:var(--vermelho)}button:disabled{opacity:.4;cursor:not-allowed}
+.tabs{display:flex;gap:6px;margin-left:auto}.tabs button{background:#1e2f5e}.tabs button.on{background:var(--amarelo);color:#0d1845}
+main{padding:14px;display:grid;gap:14px}.card{background:var(--panel);border-radius:10px;padding:12px}.card h3{margin:0 0 8px;font-size:14px;color:var(--amarelo)}
+.custo{display:flex;align-items:center;gap:12px}.barra{flex:1;height:12px;background:#1e2f5e;border-radius:6px;position:relative;overflow:hidden}.barra i{position:absolute;left:0;top:0;bottom:0;background:var(--verde)}.barra b{position:absolute;left:80%;top:0;bottom:0;width:2px;background:var(--vermelho)}
+.passos{display:flex;gap:6px;flex-wrap:wrap}.passo{padding:6px 8px;border-radius:8px;background:#0b1a3f;border:2px solid var(--cinza);font-size:12px;min-width:120px}
+.passo.ok{border-color:var(--verde)}.passo.falhou{border-color:var(--vermelho)}.passo.aguardando_voce{border-color:var(--amarelo);background:#2a2a10}.passo.voce{outline:1px dashed var(--amarelo)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:900px){.grid{grid-template-columns:1fr}}
+pre{white-space:pre-wrap;font-size:12px;background:#0b1a3f;padding:10px;border-radius:8px;max-height:300px;overflow:auto}
+.takes{display:flex;gap:10px;overflow-x:auto}.take{flex:0 0 200px;background:#0b1a3f;border-radius:8px;padding:8px;font-size:12px}.take img,.take video{width:100%;aspect-ratio:9/16;object-fit:cover;background:#000;border-radius:6px}
+.matriz{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.cel{background:#0b1a3f;border-radius:8px;padding:8px;font-size:12px;border-left:4px solid var(--cinza)}.cel.em_producao{border-color:var(--amarelo)}.cel.concluido{border-color:var(--verde)}
+label{display:block;font-size:12px;color:var(--muted);margin-top:6px}textarea{width:100%;min-height:44px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;place-items:center}.modal.on{display:grid}.modal video{height:90vh;max-width:95vw}
+.bib{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}.bib .it{background:var(--panel);border-radius:8px;padding:8px;font-size:12px}.bib img,.bib video{width:100%;aspect-ratio:9/16;object-fit:contain;background:#000;border-radius:6px}
+.msg{color:var(--amarelo);font-size:12px}.folhas img{height:110px;border-radius:6px;margin:3px}
+</style></head>
+<body>
+<header><h1>Painel · Seu Milhão</h1><select id="cid"></select><span class="msg" id="msg"></span>
+<div class="tabs"><button id="tLinha" class="on">Criativo</button><button id="tMatriz">Matriz</button><button id="tBib">Biblioteca</button></div></header>
+<main id="vLinha">
+ <div class="custo"><span id="custoTxt"></span><div class="barra"><i id="custoBar"></i><b title="80%"></b></div><button class="sec" id="btnSeq">Assistir sequência</button></div>
+ <div class="card"><h3>Micro-passos</h3><div class="passos" id="passos"></div></div>
+ <div class="grid">
+  <div class="card" id="portao"></div>
+  <div class="card"><h3>Partitura e fichas</h3><pre id="partitura"></pre><pre id="fichas"></pre></div>
+ </div>
+ <div class="card"><h3>Takes (quadro · teste · final)</h3><div class="takes" id="takes"></div></div>
+ <div class="card"><h3>Folhas de inspeção</h3><div class="folhas" id="folhas"></div></div>
+</main>
+<main id="vMatriz" style="display:none"><div class="card"><h3>Reestruturação (R01–R18)</h3><div class="passos" id="passosR"></div></div><div class="card"><h3>Matriz SEGMENTO × ÂNGULO</h3><div class="matriz" id="matriz"></div></div></main>
+<main id="vBib" style="display:none"><div><input id="q" placeholder="buscar no catálogo (id, tag, lugar, elemento, status…)" style="width:60%"> <button id="btnQ">Buscar</button></div><div class="bib" id="bib"></div></main>
+<div class="modal" id="modal"><video controls id="seqVideo"></video></div>
+<script>
+const $=s=>document.querySelector(s);let CID=null,FL=null,CR=null;
+const api=async(u,o)=>{const r=await fetch(u,o);return r.json()};
+const post=async d=>{const r=await api('/api/acao',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});if(r.erro||r.ok===false){alert(r.erro||r.saida)}else{msg(r.saida||'gravado');await carregar()}};
+const msg=t=>{$('#msg').textContent=t;setTimeout(()=>$('#msg').textContent='',5000)};
+const esc=s=>(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+async function init(){FL=await api('/api/fluxo');$('#cid').innerHTML=FL.criativos.map(c=>`<option ${c.id===FL.criativo_atual?'selected':''}>${c.id}</option>`).join('');CID=FL.criativo_atual||FL.criativos[0]?.id;$('#cid').onchange=e=>{CID=e.target.value;carregar()};await carregar()}
+function passoHtml(p,prefixo){const voce=p.executor==='VOCÊ';return `<div class="passo ${p.status} ${voce?'voce':''}"><b>${p.id}</b> ${esc(p.descricao)}<br><small>${voce?'[VOCÊ]':p.executor} · ${p.status}</small>${voce&&p.status!=='ok'?`<br><button class="ok" data-ap="${p.id}" data-pre="${prefixo}">Aprovar</button> <button class="no" data-re="${p.id}" data-pre="${prefixo}">Reprovar</button>`:''}</div>`}
+async function carregar(){FL=await api('/api/fluxo');$('#passosR').innerHTML=FL.reestruturacao.map(p=>passoHtml(p,'R')).join('');
+ $('#matriz').innerHTML=FL.matriz.celulas.map(c=>`<div class="cel ${c.status}"><b>${c.segmento} × ${c.angulo}</b><br>${c.cartao} · ${c.estilo}<br><small>${c.status} · confiança ${c.confianca}</small></div>`).join('');
+ if(!CID){return}CR=await api('/api/criativo?id='+CID);if(CR.erro){alert(CR.erro);return}
+ const e=CR.estado,g=e.gasto_usd,t=e.teto_usd,p=Math.min(100,100*g/t);$('#custoTxt').textContent=`${e.id||CID} · ${e.titulo||''} · US$ ${g.toFixed(2)} de ${t.toFixed(2)} (${p.toFixed(0)}%) · saldo ${(t-g).toFixed(2)}`;$('#custoBar').style.width=p+'%';$('#custoBar').style.background=p>=80?'var(--vermelho)':'var(--verde)';$('#btnSeq').disabled=!CR._sequencia;
+ $('#passos').innerHTML=CR.passos.map(p=>passoHtml(p,'P')).join('');
+ const prox=CR.passos.find(p=>p.status!=='ok');const aj=e.ajustes||{};
+ $('#portao').innerHTML=`<h3>Portão / ajustes</h3><div>Próximo: <b>${prox?prox.id+' · '+esc(prox.descricao)+' ['+prox.executor+']':'concluído'}</b></div>
+  <label>Manter</label><textarea id="manter">${esc(aj.manter)}</textarea><label>Mudar (só isto é aplicado)</label><textarea id="mudar">${esc(aj.mudar)}</textarea><label>Nunca</label><textarea id="nunca">${esc(aj.nunca)}</textarea>
+  <label>Nota do check</label><input id="nota" style="width:100%"><div style="margin-top:8px"><button class="sec" id="btnAj">Gravar ajustes</button></div>
+  <div style="margin-top:8px;font-size:12px;color:var(--muted)">Cartão: ${esc(CR.cartao.titulo||'—')} · ${esc(CR.cartao.segmento||'')} × ${esc(CR.cartao.angulo||'')} · estilo ${esc(CR.cartao.estilo||'')} · ${esc(CR.cartao.hipotese||'')}</div>`;
+ $('#partitura').textContent=CR.falas.length?CR.falas.map(f=>`${f.id} (mov ${f.movimento}, ${f.duracao_s}s) ${f.texto}${f.texto_tela?'  [tela: '+f.texto_tela+']':''}`).join('\n'):'(sem partitura)';
+ $('#fichas').textContent=CR.fichas.map(f=>`${f.arquivo}: ${f.veredito?f.veredito+' · '+(f.motivo||''):(f.automatico_ok!=null?(f.automatico_ok?'auto OK':'auto FALHOU '+(f.erros||[]).join('; ')):(f.status||f.erro||''))}`).join('\n')||'(nenhuma ficha)';
+ $('#takes').innerHTML=CR.takes.map(t=>{const q=t._quadros[0],v=t._final[0]||t._teste[0],a=t._aprovado.find(x=>x.endsWith('.mp4'));return `<div class="take"><b>${t.id}</b> ${esc(t.descricao)}<br><small>${t.ligacao} · ${t.origem||'?'} · ${t.modelo}</small>${q?`<img src="/midia/${q}">`:'<div style="aspect-ratio:9/16;background:#000;border-radius:6px;display:grid;place-items:center;color:#666">sem quadro</div>'}${v?`<video src="/midia/${v}" controls muted playsinline></video><small>${v.split('/').pop()}</small>`:''}${a?`<small>✅ ${a.split('/').pop()}</small>`:''}<div><input placeholder="trecho 0-4" style="width:90px" data-tr="${t.id}"> <button class="sec" data-tk="${t.id}">Esta é a boa</button></div></div>`}).join('')||'<i>sem decupagem</i>';
+ $('#folhas').innerHTML=CR.folhas.map(f=>`<a href="/midia/${f}" target="_blank"><img src="/midia/${f}" title="${f}"></a>`).join('')||'<i>nenhuma</i>';
+ document.querySelectorAll('[data-ap]').forEach(b=>b.onclick=()=>post({acao:'aprovar',passo:b.dataset.ap,id:CID,nota:$('#nota')?.value||''}));
+ document.querySelectorAll('[data-re]').forEach(b=>b.onclick=()=>{const n=$('#nota')?.value||'';if(!n)return alert('escreva a nota (o que devolver e para quem)');post({acao:'aprovar',passo:b.dataset.re,id:CID,nota:n,reprovar:true})});
+ $('#btnAj').onclick=()=>post({acao:'ajustes',id:CID,manter:$('#manter').value,mudar:$('#mudar').value,nunca:$('#nunca').value});
+ document.querySelectorAll('[data-tk]').forEach(b=>b.onclick=()=>{const t=CR.takes.find(x=>x.id===b.dataset.tk);const v=t._final[0]||t._teste[0];post({acao:'take',id:CID,take:t.id,tomada_aprovada:v,trecho_uso:document.querySelector(`[data-tr="${t.id}"]`).value||'0-4'})});}
+$('#btnSeq').onclick=()=>{$('#seqVideo').src='/midia/'+CR._sequencia;$('#modal').classList.add('on');$('#seqVideo').play()};$('#modal').onclick=e=>{if(e.target.id==='modal'){$('#modal').classList.remove('on');$('#seqVideo').pause()}};
+const tabs={tLinha:'vLinha',tMatriz:'vMatriz',tBib:'vBib'};Object.entries(tabs).forEach(([b,v])=>$('#'+b).onclick=()=>{Object.entries(tabs).forEach(([b2,v2])=>{$('#'+v2).style.display=b2===b?'':'none';$('#'+b2).classList.toggle('on',b2===b)});if(b==='tBib')buscar()});
+async function buscar(){const r=await api('/api/biblioteca?q='+encodeURIComponent($('#q').value));$('#bib').innerHTML=r.map(i=>`<div class="it">${i._kind==='imagem'?`<img src="${i._url}">`:i._kind==='video'?`<video src="${i._url}" controls muted></video>`:`<a href="${i._url}" target="_blank">abrir</a>`}<div><b>${i.id}</b></div><div>${i.status} · aut. ${i.autorizacao}</div><div style="color:var(--muted)">${i.tipo} · ${(i.tags?.lugar||[]).join(',')}</div></div>`).join('')||'<i>nada</i>'}
+$('#btnQ').onclick=buscar;$('#q').onkeydown=e=>{if(e.key==='Enter')buscar()};init();
+</script></body></html>

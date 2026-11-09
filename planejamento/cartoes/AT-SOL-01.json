@@ -1,0 +1,22 @@
+{
+ "id": "AT-SOL-01",
+ "duracao_max_s": 30,
+ "status": "rascunho",
+ "criado": "2026-10-21",
+ "observacao_x_inferencia": {
+  "observacao": "nenhuma observação direta no corpus",
+  "inferencia": "hipótese da missão 21/10; regra de política: movimento 5 (escalonamento) suspenso",
+  "confianca": "baixa"
+ },
+ "titulo": "Contribuição com legado",
+ "segmento": "alto_ticket",
+ "angulo": "solidario",
+ "estilo": "a definir",
+ "personas": [],
+ "teto_usd": 30,
+ "hipotese": "O alto ticket responde a impacto e legado: a destinação integral à Instituição e as provas (Loteria Federal, SUSEP) em registro sóbrio; fala-se de contribuição maior para a causa, nunca de comprar em volume para ganhar.",
+ "midia": {
+  "destino": "Meta e Instagram, público lookalike de doadores",
+  "formato": "9:16 sóbrio"
+ }
+}

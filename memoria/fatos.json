@@ -1,0 +1,524 @@
+{
+ "_schema": "cada folha tem valor, fonte e data; status opcional (confirmado | a_confirmar | bloqueado | estimativa). Consulte com `sm fato <chave.pontuada>`.",
+ "versao": 1,
+ "atualizado": "2026-10-22",
+ "produto": {
+  "nome": {
+   "valor": "Seu Milhão",
+   "fonte": "Condições do Título (regulamento público)",
+   "data": "2026-10-20"
+  },
+  "tipo": {
+   "valor": "Título de Capitalização, modalidade Filantropia Premiável, contribuição única",
+   "fonte": "Condições do Título, pág. 1, cabeçalho",
+   "data": "2026-10-20"
+  },
+  "emissora": {
+   "valor": "Emissora Capitalização S/A",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-20"
+  },
+  "emissora_cnpj": {
+   "valor": "00.000.000/0000-00",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-20"
+  },
+  "preco": {
+   "valor": "R$ 0,49",
+   "fonte": "preço público anunciado do título",
+   "data": "2026-10-21"
+  },
+  "premio": {
+   "valor": "R$ 100.000,00 líquidos",
+   "fonte": "prêmio público anunciado (Condições do Título)",
+   "data": "2026-10-20"
+  },
+  "sorteio_data": {
+   "valor": "29/11/2026",
+   "fonte": "Condições do Título (data pública do sorteio)",
+   "data": "2026-10-20"
+  },
+  "sorteio_quem": {
+   "valor": "Loteria Federal",
+   "fonte": "Condições do Título, pág. 1, item 3.3 ('O sorteio será realizado pela Loteria Federal na data indicada')",
+   "data": "2026-10-20"
+  },
+  "periodo": {
+   "valor": "15/10/2026 a 29/11/2026 (10h)",
+   "fonte": "Condições do Título",
+   "data": "2026-10-20"
+  },
+  "entidade": {
+   "valor": "Instituição Parceira",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública); entidade beneficiária real omitida",
+   "data": "2026-10-20"
+  },
+  "mecanismo": {
+   "valor": "cessão do direito de resgate à Instituição Parceira",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-20"
+  },
+  "escalonamento": {
+   "valor": {
+    "R$ X": "N títulos (Nx)",
+    "R$ Y": "M títulos (Mx)"
+   },
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21",
+   "status": "a_confirmar",
+   "nota": "placeholder: faixas de compra omitidas"
+  },
+  "susep_processo": {
+   "valor": "00000.000000/0000-00",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-20",
+   "status": "confirmado"
+  },
+  "susep_processo_promocao": {
+   "valor": "00000.000000/0000-00",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-20",
+   "nota": "só entra se algum prêmio da promoção for anunciado"
+  },
+  "promocao_comercial": {
+   "valor": "bloqueada: valores da promoção comercial fora de qualquer peça",
+   "fonte": "decisão interna (regulamento da promoção com pendência)",
+   "data": "2026-10-20",
+   "status": "bloqueado"
+  },
+  "nivel_consciencia": {
+   "valor": "1 (anúncio vende o mundo; CTA entrar no grupo)",
+   "fonte": "briefing interno",
+   "data": "2026-10-20"
+  }
+ },
+ "redacoes_fixas": {
+  "destinacao": {
+   "valor": "Parte da sua compra apoia o trabalho da Instituição Parceira.",
+   "fonte": "resposta P04 do usuário 20/10/2026; mecanismo no item 1.1",
+   "data": "2026-10-20"
+  },
+  "sorteio_fala": {
+   "valor": "o resultado sai da Loteria Federal",
+   "fonte": "decisão do usuário 20/10/2026 (roteiro v4)",
+   "data": "2026-10-20"
+  },
+  "sorteio_texto": {
+   "valor": "Sorteio pela Loteria Federal · título emitido pela Emissora",
+   "fonte": "decisão do usuário 20/10/2026 (roteiro v4)",
+   "data": "2026-10-20"
+  },
+  "rodape": {
+   "valor": "Título de Capitalização · modalidade Filantropia Premiável · emitido pela Emissora Capitalização S/A · Processo SUSEP 00000.000000/0000-00 · Imagens meramente ilustrativas",
+   "fonte": "decisão do usuário + SUSEP confirmada",
+   "data": "2026-10-20"
+  },
+  "rodape_sem_numero": {
+   "valor": "Título de Capitalização · modalidade Filantropia Premiável · emitido pela Emissora Capitalização S/A · Imagens meramente ilustrativas",
+   "fonte": "decisão do usuário",
+   "data": "2026-10-20"
+  },
+  "entidade_nome": {
+   "valor": "Instituição Parceira",
+   "fonte": "item 1.1",
+   "data": "2026-10-20"
+  },
+  "relacao_com_a_casa": {
+   "valor": "parceiro",
+   "fonte": "missão do usuário 21/10/2026 (nunca sócio nem patrocinador)",
+   "data": "2026-10-21"
+  }
+ },
+ "proibidos": {
+  "_nota": "expressões regulares (case-insensitive) e substituição quando houver; usadas por `sm lint`",
+  "lista": [
+   {
+    "id": "ganhe",
+    "regex": "\\bganh(e|a|ar|ou|am|aria)\\b",
+    "substituir": "concorre",
+    "motivo": "ganho certo / linguagem de aposta (PLAYBOOK §2)"
+   },
+   {
+    "id": "aposta",
+    "regex": "\\bapost(a|as|ar|e|ou)\\b",
+    "substituir": null,
+    "motivo": "título de capitalização não é aposta (adendo 20/10)"
+   },
+   {
+    "id": "ganho_certo",
+    "regex": "ganho (certo|garantido)|n[aã]o (tem|h[aá]) como perder|certeza de ganhar",
+    "substituir": null,
+    "motivo": "promessa de ganho certo"
+   },
+   {
+    "id": "transformar_vida",
+    "regex": "transform(a|ar|e) (a |sua |tua )?vida",
+    "substituir": "concorrer a R$ 100.000",
+    "motivo": "promessa exagerada (PLAYBOOK §2)"
+   },
+   {
+    "id": "vai_direto",
+    "regex": "vai direto (pra|para) quem precisa",
+    "substituir": "redacoes_fixas.destinacao",
+    "motivo": "a destinação tem redação fixa"
+   },
+   {
+    "id": "cota_bilhete",
+    "regex": "\\b(cota|cotas|bilhete|bilhetes)\\b",
+    "substituir": "título",
+    "motivo": "o produto é título (PLAYBOOK §2)"
+   },
+   {
+    "id": "socio_patrocinador",
+    "regex": "\\b(s[oó]ci[oa]s?|patrocinador(a|es)?)\\b",
+    "substituir": "parceiro",
+    "motivo": "relação com a Instituição é de parceria"
+   },
+   {
+    "id": "nao_perde_nunca",
+    "regex": "n[aã]o perde nunca|nunca perde",
+    "substituir": null,
+    "motivo": "ganho certo (adendo 20/10)"
+   },
+   {
+    "id": "pix_premio",
+    "regex": "\\bpix\\b.{0,40}\\b(pr[eê]mio|cem mil|100\\.?000|ganh)|\\b(pr[eê]mio|cem mil|100\\.?000)\\b.{0,40}\\bpix\\b",
+    "substituir": null,
+    "motivo": "o regulamento não define o meio de pagamento (pág. 1 item 3.1; pág. 4 item 4.2)"
+   },
+   {
+    "id": "sorteio_emissora",
+    "regex": "sorteio (realizado|feito) pela emissora|emissora (realiza|faz) o sorteio",
+    "substituir": "redacoes_fixas.sorteio_texto",
+    "motivo": "item 3.3: o sorteio é da Loteria Federal"
+   },
+   {
+    "id": "loteria_como_nome",
+    "regex": "\\b(nossa|a|essa) loteria\\b",
+    "substituir": "título",
+    "motivo": "'loteria' não é o nome do produto"
+   },
+   {
+    "id": "investimento",
+    "regex": "\\binvest(imento|ir|e)\\b",
+    "substituir": null,
+    "motivo": "não é investimento (adendo 20/10)"
+   },
+   {
+    "id": "atributo_segunda_pessoa",
+    "regex": "\\bvoc[eê] (que )?(est[aá]|anda|vive|t[aá]) (endividad|apertad|sem dinheiro|devendo|desempregad|no vermelho)|\\bsua(s)? d[ií]vida(s)?\\b|\\bseu aperto\\b|\\bsua renda\\b|\\bsua religi[aã]o\\b",
+    "substituir": null,
+    "motivo": "política do Meta: nenhum atributo de quem assiste em segunda pessoa"
+   }
+  ]
+ },
+ "pessoas": {
+  "adultos_ia": {
+   "valor": "um por plano, de três quartos, sem olhar para a lente, sem falar, nunca em grupo (limite da Vertex); pessoas comuns brasileiras de idades e corpos variados, com imperfeições reais (rugas, manchas, dentes desalinhados, cabelo bagunçado, roupa amassada), tons de pele diversos; expressão: EMOÇÃO NO PICO E CURTA (gargalhada, susto, olho marejado), não mais contida; nunca grupo gerado na Vertex (filtro bloqueia)",
+   "fonte": "missão 'realismo v2' do usuário",
+   "data": "2026-10-22"
+  },
+  "texto_premio_posicao": {
+   "valor": "só sobre a moeda ou a mão; nunca colado em rosto",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "apresentador": {
+   "valor": "réplica digital autorizada do apresentador da marca; única exceção que olha para a lente; não fala; ficha de referência na biblioteca privada; aprovação dele obrigatória (folha de comparação); plano B: gravação real",
+   "fonte": "missão do usuário",
+   "data": "2026-10-21"
+  },
+  "apresentador_rosto_aprovado": {
+   "valor": "sim/não (registrado no portão G2)",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "criancas": {
+   "valor": "só material real da Instituição Parceira, com termo, animado sem IA generativa (zoom, deslize, parallax só no fundo, rosto intacto); nenhuma descrição de traço facial para geração",
+   "fonte": "resposta Q3 do usuário 20/10/2026; missão 21/10",
+   "data": "2026-10-21"
+  },
+  "casa_nunca_ia": {
+   "valor": "a Instituição Parceira (fachada, interior, logo) nunca é gerada por IA",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "voz": {
+   "valor": "sem TTS, sem clonagem; takes sem áudio; narração real do apresentador entra na edição (CapCut)",
+   "fonte": "adendo 20/10; missão 21/10",
+   "data": "2026-10-21"
+  },
+  "fotos_instituicao_status": {
+   "valor": {
+    "foto_exemplo_logo.jpg": "liberada",
+    "foto_exemplo_1.jpg": "provisória"
+   },
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  }
+ },
+ "moeda": {
+  "referencia": {
+   "valor": "moeda de 50 centavos do Real (verso): scan de referência na biblioteca privada",
+   "fonte": "decisão do usuário",
+   "data": "2026-10-21"
+  },
+  "frente": {
+   "valor": "nunca inventar; sem frente.jpg a moeda aparece de verso ou de perfil",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "legibilidade": {
+   "valor": "o '50' sempre correto; texto errado legível é descarte; CENTAVOS e ano podem ficar ilegíveis, nunca errados",
+   "fonte": "PLAYBOOK §4",
+   "data": "2026-10-21"
+  },
+  "acoes_proibidas": {
+   "valor": "nunca voando, em pilha, em chuva ou virando prêmio; uma moeda por plano",
+   "fonte": "decisão B3 do usuário 20/10/2026",
+   "data": "2026-10-20"
+  },
+  "banco_central": {
+   "valor": "Lei 4.511/1964, art. 13 (proíbe impressos que se assemelhem a cédulas ou moedas); cartilha do BCB manda submeter publicidade com reprodução de cédulas ao Mecir; prática segura: submissão prévia ao Mecir antes da veiculação; não impede testes",
+   "fonte": "Lei 4.511/1964, art. 13 (Planalto)",
+   "data": "2026-10-21",
+   "status": "a_confirmar"
+  }
+ },
+ "tecnica": {
+  "formato": {
+   "valor": "9:16, 1080×1920, 24 fps, sem áudio",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "codec_master": {
+   "valor": "H.264 CRF 16, yuv420p, keyframe por segundo",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "codec_biblioteca": {
+   "valor": "H.264 CRF 18",
+   "fonte": "missão 21/10/2026 (LFS limitado)",
+   "data": "2026-10-21"
+  },
+  "rota": {
+   "valor": "Vertex AI, projeto your-gcp-project-id (GOOGLE_CLOUD_PROJECT no .env), ADC da conta dona do projeto",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "modelo_teste": {
+   "valor": "veo-3.1-fast-generate-001, 720p, 8 s",
+   "fonte": "PLAYBOOK §6",
+   "data": "2026-10-21"
+  },
+  "modelo_final_rosto_mao": {
+   "valor": "veo-3.1-generate-001, 1080p, 8 s",
+   "fonte": "PLAYBOOK §6 (comparativo 20/10: Fast reprovou em mão com moeda)",
+   "data": "2026-10-21"
+  },
+  "modelo_final_lugar": {
+   "valor": "veo-3.1-fast-generate-001, 1080p, 8 s",
+   "fonte": "PLAYBOOK §6",
+   "data": "2026-10-21"
+  },
+  "modelo_imagem": {
+   "valor": "gemini-3.1-flash-image (Nano Banana 2), 1K, Vertex global",
+   "fonte": "scripts v1",
+   "data": "2026-10-21"
+  },
+  "primeiro_e_ultimo_quadro": {
+   "valor": "a Vertex aceita image + lastFrame em veo-3.1-generate-001 e veo-3.1-fast-generate-001, sempre 8 s",
+   "fonte": "docs.cloud.google.com 'Generate videos using first and last video frames', conferida em 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "precos_usd": {
+   "valor": {
+    "veo_fast_720p_por_s": 0.1,
+    "veo_fast_1080p_por_s": 0.12,
+    "veo_padrao_por_s": 0.4,
+    "veo_lite_720p_por_s": 0.05,
+    "veo_lite_1080p_por_s": 0.08,
+    "nano_banana_1k": 0.07,
+    "nano_banana_2k": 0.1
+   },
+   "fonte": "tabela pública de preços da Vertex AI (cloud.google.com/vertex-ai/generative-ai/pricing)",
+   "data": "2026-10-21",
+   "status": "estimativa",
+   "nota": "preços de lista públicos usados só para estimar antes de gerar; reconfirme na tabela vigente"
+  },
+  "duracao_trecho": {
+   "valor": "1 a 2 s de uso por plano (gera 8 s, usa um trecho curto); a decupagem prevê mais planos por vídeo, dimensionados pela partitura",
+   "fonte": "missão 'realismo v2', 22/10/2026 (antes: 3–4 s)",
+   "data": "2026-10-22"
+  },
+  "licoes_veo": {
+   "valor": [
+    "deriva de moeda e rosto depois de ~4,5 s",
+    "ação precisa pede tempo marcado (0–1 s, 1–3 s…)",
+    "grupo é bloqueado pelo filtro ou vira rostos indesejados",
+    "objeto em movimento rápido deforma",
+    "tentativa bloqueada não é cobrada, mas é registrada",
+    "texto nunca vem do Veo (só o '50' da moeda)",
+    "mão erguida para a câmera vira o rosto para a lente e mostra a palma",
+    "'come here'/aceno com sorriso abrindo faz o modelo inventar segunda mão e boca aberta: pedir 'other hand out of frame' e 'mouth never opens'",
+    "o padrão 1080p não reproduz o Fast quadro a quadro",
+    "Nano Banana insere texto a menos que o prompt diga 'nothing written'; cota por minuto (429)"
+   ],
+   "fonte": "lições registradas na produção",
+   "data": "2026-10-21"
+  },
+  "teto_padrao_conjunto": {
+   "valor": 20.0,
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública): teto por criativo em US$, ajuste ao seu orçamento",
+   "data": "2026-10-21"
+  },
+  "alerta_teto": {
+   "valor": "80%",
+   "fonte": "missão 21/10/2026",
+   "data": "2026-10-21"
+  },
+  "regra_custo": {
+   "valor": "um quadro de início por take (fim só se exigir lastFrame), aprovação sim/não, 1 teste Fast 720p (2º só se o 1º cair), 1 final",
+   "fonte": "decisão do usuário",
+   "data": "2026-10-21"
+  },
+  "ritmo_montagem": {
+   "valor": "alternar cortes de ~1,2 s com o plano real da criança segurado por mais tempo (respiro emocional)",
+   "fonte": "missão 'realismo v2', 22/10/2026",
+   "data": "2026-10-22"
+  },
+  "pos_processamento": {
+   "valor": "sm tratar-celular <arquivo> [--intensidade leve|media] antes da montagem; metas em estilos/realismo-celular/pos.json: saturação 0,19–0,22 (malha fechada implementada), realces >0,97 entre 2% e 4%, alta frequência 7–9, tremor 4–5 px por 0,25 s (malha fechada pendente: REFLEXOS.md); nunca remove marca d'água nem assinatura de IA",
+   "fonte": "missão 'realismo v2', 22/10/2026",
+   "data": "2026-10-22"
+  }
+ },
+ "marca": {
+  "titulos": {
+   "valor": "Anton, ouro 3D (face em degradê + extrusão)",
+   "fonte": "identidade visual da marca",
+   "data": "2026-10-20"
+  },
+  "apoio": {
+   "valor": "Montserrat 800 (copies, apoio, rodapé)",
+   "fonte": "idem",
+   "data": "2026-10-20"
+  },
+  "paleta": {
+   "valor": "identidade.md na biblioteca privada · realismo-celular v2: saturação média 0,18–0,22, contraste médio-alto, pretos ≥ 0,03",
+   "fonte": "identidade visual da marca",
+   "data": "2026-10-20"
+  },
+  "logos": {
+   "valor": "só oficiais, nunca recriados; os atuais são provisórios (copiados do site)",
+   "fonte": "biblioteca privada",
+   "data": "2026-10-20",
+   "status": "a_confirmar"
+  },
+  "fontes_licenca": {
+   "valor": "Anton e Montserrat, SIL OFL 1.1 (biblioteca/referencias/marca/fontes/)",
+   "fonte": "SIL OFL 1.1",
+   "data": "2026-10-20"
+  },
+  "rotulo_ia": {
+   "valor": "rótulo 'conteúdo gerado por IA' obrigatório na publicação no Meta",
+   "fonte": "PLAYBOOK §2",
+   "data": "2026-10-21"
+  }
+ },
+ "pendencias": {
+  "termo_instituicao": {
+   "valor": "termo da Instituição Parceira (anúncio pago, prazo, consentimento dos responsáveis)",
+   "dono": "usuário",
+   "status": "ausente",
+   "bloqueia": "veiculação de qualquer take com foto da Instituição",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "termo_apresentador": {
+   "valor": "termo de réplica digital da imagem do apresentador",
+   "dono": "usuário",
+   "status": "ausente",
+   "bloqueia": "veiculação dos takes com o apresentador",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "banco_central": {
+   "valor": "submissão prévia da imagem da moeda ao Mecir",
+   "dono": "jurídico / usuário",
+   "status": "pendente",
+   "bloqueia": "veiculação",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "personas": {
+   "valor": "documento das personas P1 a P5",
+   "dono": "usuário",
+   "status": "ausente (só rótulos no corpus)",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "calibracao_apresentador": {
+   "valor": "gravação de calibração do apresentador em fontes/calibracao/",
+   "dono": "usuário",
+   "status": "ausente (estimativa 2,4 palavras/s)",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "origem_fotos_1_3": {
+   "valor": "a Instituição Parceira confirmar a origem das fotos",
+   "dono": "usuário",
+   "status": "pendente",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  },
+  "fotos_apresentador_originais": {
+   "valor": "fotos originais do apresentador (frente, três quartos, perfil)",
+   "dono": "usuário",
+   "status": "pendente",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-21"
+  }
+ },
+ "estilo": {
+  "regra_de_ouro": {
+   "valor": "mundo banal e crível com um único elemento impossível; textura de cinegrafista amador",
+   "fonte": "missão 'internalizar' do usuário",
+   "data": "2026-10-22"
+  },
+  "referencias_externas": {
+   "valor": {
+    "referencia_externa_1": "só estilo, uso local, sem licença"
+   },
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-22",
+   "status": "bloqueado"
+  },
+  "trava_geracao": {
+   "valor": "fluxo/estado.json → geracao_liberada=false por padrão; sm quadro/veo recusam mesmo com --confirmar ('geração travada: aguardando roteiro aprovado'); só o usuário libera com sm liberar-geracao <id>, um criativo por vez; --seco (custo zero) não passa pela trava",
+   "fonte": "missão 'internalizar'",
+   "data": "2026-10-22"
+  }
+ },
+ "planejamento": {
+  "tk03_status": {
+   "valor": "TK-03 'Vem com a gente' é ESTUDO (v1 da esteira), não produção: clipes aprovados ficam no banco como referência e possível reuso, tag estudo-v1; nada apagado",
+   "fonte": "missão 'internalizar'",
+   "data": "2026-10-22"
+  },
+  "entrada_roteiro": {
+   "valor": "o usuário entrega o roteiro quadro a quadro em planejamento/modelos/ROTEIRO_QUADRO_A_QUADRO.md preenchido → sm importar-roteiro <arquivo> → sm validar roteiro <id> (sem custo)",
+   "fonte": "missão 'internalizar'",
+   "data": "2026-10-22"
+  }
+ },
+ "fornecedores": {
+  "exemplo_fornecedor": {
+   "valor": "teste controlado em espera; nunca enviar fotos de crianças; réplica do apresentador só com termo que cubra treino de modelos; nunca remover marcas de proveniência",
+   "fonte": "EXEMPLO (valor ilustrativo da versão pública)",
+   "data": "2026-10-22",
+   "status": "a_confirmar"
+  }
+ },
+ "_publico": "Versão pública sanitizada: estrutura, chaves e as 13 regex proibidas são as reais; valores de terceiros, pessoas, identificadores e custos foram trocados por exemplos/placeholders. Prêmio, preço e data do sorteio são os termos públicos do produto anunciado."
+}
